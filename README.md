@@ -137,6 +137,6 @@ coming soon ...
 ### Visualizations
 
 ![image](figs/banner.png)
-
+The attention map's progression during training is shown, starting with random masks and evolving towards maximal selective attention. The background DRC loss plot demonstrates the effectiveness of the selective attention strategy in guiding MAEs to learn the informative regions. Notably, in a, the attention map is initially random. As training progresses b, c, it focuses on challenging areas like legs, reducing attention to the flat seat by epoch 100. Between epochs 200 and 300 d, the network can reconstruct challenging leg regions, leveraging earlier attention patterns and repeated leg geometry. Simultaneously, areas with fewer connections and less geometric information receive diminished attention e. By epoch 400 f, the distance between the attention maps decreases, indicating a more balanced focus across the patches. The flat-seat area is no longer excessively easier than other regions, with the DRC loss plot providing evidence for this change, however, geometrically complex regions remain under focus.
 
 
