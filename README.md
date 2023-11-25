@@ -56,7 +56,6 @@ Real-world shape classification on ScanObjectNN:
 | Point-MAE+SA3DF | Classification | PB-T50-RS|[scan_pb.yaml](./Point-MAE_SA3D/config_finetune_scan_hardest.yaml) | 85.35%| [scan_pd.log](./Point-MAE_SA3D/log_files/hardest.txt) |
 | Point-MAE+SA3DF | Classification |OBJ-BG| [scan_obj-bg.yaml](./Point-MAE_SA3D/config_finetune_scan_objbg.yaml) | 90.70%| [scan_obj-pd.log](./Point-MAE_SA3D/log_files/obj_bg.txt) |
 | Point-MAE+SA3DF | Classification | OBJ-ONLY| [scan_obj.yaml](./Point-MAE_SA3D/config_finetune_scan_objonly.yaml) | 90.36%| [scan_obj.log](./Point-MAE_SA3D/log_files/obj_only.txt) |
-
 | Point-MAE+SA3DF | Classification | PB-T50-RS|[scan_pb.yaml](./Point-M2AE_SA3D/config_finetune_scan_hardest_PointM2AE.yaml) | 86.47%| [scan_pd.log](./Point-M2AE_SA3D/log_files/hardest.txt) |
 | Point-MAE+SA3DF | Classification |OBJ-BG| [scan_obj-bg.yaml](./Point-M2AE_SA3D/config_finetune_scan_objbg_PointM2AE.yaml) | 92.42%| [scan_obj-pd.log](./Point-M2AE_SA3D/log_files/obj_bg.txt) |
 | Point-MAE+SA3DF | Classification | OBJ-ONLY| [scan_obj.yaml](./Point-M2AE_SA3D/config_finetune_scan_objonly_PointM2AE.yaml) | 89.50%| [scan_obj.log](./Point-M2AE_SA3D/log_files/obj_only.txt) |
