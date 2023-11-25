@@ -69,4 +69,4 @@ Part segmentation on ShapeNetPart:
 Few-shot classification on ModelNet40:
 | Model |  Task | Dataset | Config | 5w10s | 5w20s | 10w10s| 10w20s|     
 | :-----: | :-----: |:-----:| :-----: | :-----:|:-----:|:-----:| :-----:|
-| Point-MAE+SA3DF |  Few-shot Cls. | ModelNet40 |[fewshot.yaml] (./Point-MAE_SA3D/fewshot.yaml)| 97.0%|98.3%|93.1%|95.2%|
+| Point-MAE+SA3DF |  Few-shot Cls. | ModelNet40 |[fewshot.yaml] (./Point-MAE_SA3D/fewshot.yaml) | 97.0%|98.3%|93.1%|95.2%| 
