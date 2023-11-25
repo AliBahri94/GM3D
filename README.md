@@ -35,6 +35,20 @@ pip install --upgrade https://github.com/unlimblue/KNN_CUDA/releases/download/0.
 ### Datasets
 
 We use ShapeNet, ScanObjectNN, ModelNet40 and ShapeNetPart in this work. See [Point-MAE Repo](https://github.com/Pang-Yatian/Point-MAE/blob/main/DATASET.md) for details.
+The final directory structure should be:
+```
+│Point-M2AE/
+├──cfgs/
+├──datasets/
+├──data/
+│   ├──ModelNet/
+│   ├──ModelNetFewshot/
+│   ├──modelnet40_ply_hdf5_2048/  # Specially for Linear SVM
+│   ├──ScanObjectNN/
+│   ├──ShapeNet55-34/
+│   ├──shapenetcore_partanno_segmentation_benchmark_v0_normal/
+├──...
+```
 
 ### Pre-training
 Pre-trained by ShapeNet, Point-M2AE is evaluated by **Linear SVM** on ModelNet40 and ScanObjectNN (OBJ-BG split) datasets, without downstream fine-tuning:
