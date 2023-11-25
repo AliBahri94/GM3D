@@ -76,12 +76,13 @@ Few-shot classification on ModelNet40:
 ## Get Started
 
 ### Pre-training
-Point-MAEe+SA3DF and Point-M2AEe+SA3DF are pre-trained on ShapeNet dataset with the config files `./Point-MAE_SA3D/cfgs/config.yaml and ./Point-M2AE_SA3D/cfgs/config_Point_M2AE.yaml`. 
-Run for Point-MAEe+SA3DF:
+Point-MAE+SA3DF and Point-M2AEe+SA3DF are pre-trained on ShapeNet dataset with the config files `./Point-MAE_SA3D/cfgs/config.yaml and ./Point-M2AE_SA3D/cfgs/config_Point_M2AE.yaml`. 
+
+Run for Point-MAE+SA3DF:
 ```bash
 CUDA_VISIBLE_DEVICES=<GPUs> python main_pretrain.py --config ./Point-MAE_SA3D/cfgs/config.yaml  --exp_name pre-train
 ```
-Run for Point-M2AEe+SA3DF:
+Run for Point-M2AE+SA3DF:
 ```bash
 CUDA_VISIBLE_DEVICES=<GPUs> python main_pretrain.py --config ./Point-M2AE_SA3D/cfgs/config_Point_M2AE.yaml --exp_name pre-train
 ```
