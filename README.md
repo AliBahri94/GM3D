@@ -110,7 +110,7 @@ CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config /Point-MAE_SA3D/cfg
 ```
 ```bash
 CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config ./Point-MAE_SA3D/cfgs/config_finetune_scan_objbg.yaml --finetune_model --exp_name finetune --ckpts ckpts/pretrained_model.pth
-
+```
 
 
 
