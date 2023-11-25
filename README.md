@@ -11,3 +11,8 @@ The official implementation of our paper "Selective Attention in 3D: Geometrical
 - [TorchVision 0.14.1](https://pytorch.org/)
 - [Numpy 1.24.3](https://numpy.org/)
 - [timm 0.4.5](https://github.com/rwightman/pytorch-image-models)
+
+Other packages:
+```
+pip install -r requirements.txt
+```
