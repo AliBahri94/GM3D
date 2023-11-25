@@ -142,6 +142,6 @@ The attention map's progression during training is shown, starting with random m
 
 ## Acknowledgements
 
-Our codes are built upon [Point-MAE](https://github.com/Pang-Yatian/Point-MAE), [Point-M2AE](https://github.com/ZrrSkywalker/Point-M2AE) and [HPM](https://github.com/Haochen-Wang409/HPM)
+Our codes are built upon [Point-MAE](https://github.com/Pang-Yatian/Point-MAE), [Point-M2AE](https://github.com/ZrrSkywalker/Point-M2AE) and [HPM](https://github.com/Haochen-Wang409/HPM). We thank the authors for releasing their codes.
 
 
