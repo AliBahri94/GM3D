@@ -134,6 +134,9 @@ For Few-shot, run:
 coming soon ...
 ```
 
+### Visualizations
+
+![image](figs/banner.png)
 
 
 
