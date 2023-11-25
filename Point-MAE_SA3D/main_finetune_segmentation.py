@@ -222,7 +222,7 @@ def main(args):
     val_writer = SummaryWriter(os.path.join(args.output_dir, 'test'))
     logger = get_logger("pretrain")"""
 
-    root = "/export/livia/home/vision/Abahri/projects/Point-MAE/Point-MAE-org/Point-MAE/data/shapenetcore_partanno_segmentation_benchmark_v0_normal/"
+    root = "./Point-MAE/data/shapenetcore_partanno_segmentation_benchmark_v0_normal/"
     TRAIN_DATASET = PartNormalDataset(root= root, npoints= 2048, split='trainval', normal_channel= False)
     data_loader_train = torch.utils.data.DataLoader(TRAIN_DATASET, batch_size=args.batch_size, shuffle=True, num_workers=10, drop_last=True)
     TEST_DATASET = PartNormalDataset(root= root, npoints= 2048, split='test', normal_channel= False)

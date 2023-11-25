@@ -1,4 +1,4 @@
-2023-11-16 03:10:20,153 - finetune_modelnet - INFO - Copy the Config file from cfgs/finetune_modelnet.yaml to /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/finetune_modelnet40_new_opti_last_model_lr_5e_4_Modified_Batch_Size__93_55__/Voting/finetune_modelnet/cfgs/test_default/config.yaml
+2023-11-16 03:10:20,153 - finetune_modelnet - INFO - Copy the Config file from cfgs/finetune_modelnet.yaml to ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/finetune_modelnet40_new_opti_last_model_lr_5e_4_Modified_Batch_Size__93_55__/Voting/finetune_modelnet/cfgs/test_default/config.yaml
 2023-11-16 03:10:20,154 - finetune_modelnet - INFO - args.config : cfgs/finetune_modelnet.yaml
 2023-11-16 03:10:20,154 - finetune_modelnet - INFO - args.launcher : none
 2023-11-16 03:10:20,154 - finetune_modelnet - INFO - args.local_rank : 0
@@ -9,7 +9,7 @@
 2023-11-16 03:10:20,155 - finetune_modelnet - INFO - args.exp_name : test_default
 2023-11-16 03:10:20,155 - finetune_modelnet - INFO - args.loss : cd1
 2023-11-16 03:10:20,155 - finetune_modelnet - INFO - args.start_ckpts : None
-2023-11-16 03:10:20,155 - finetune_modelnet - INFO - args.ckpts : /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/finetune_modelnet40_new_opti_last_model_lr_5e_4_Modified_Batch_Size__93_55__/vit_large_patch16_exp_temp_best.pth
+2023-11-16 03:10:20,155 - finetune_modelnet - INFO - args.ckpts : ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/finetune_modelnet40_new_opti_last_model_lr_5e_4_Modified_Batch_Size__93_55__/vit_large_patch16_exp_temp_best.pth
 2023-11-16 03:10:20,155 - finetune_modelnet - INFO - args.val_freq : 1
 2023-11-16 03:10:20,155 - finetune_modelnet - INFO - args.vote : False
 2023-11-16 03:10:20,155 - finetune_modelnet - INFO - args.resume : False
@@ -20,8 +20,8 @@
 2023-11-16 03:10:20,156 - finetune_modelnet - INFO - args.way : -1
 2023-11-16 03:10:20,156 - finetune_modelnet - INFO - args.shot : -1
 2023-11-16 03:10:20,156 - finetune_modelnet - INFO - args.fold : -1
-2023-11-16 03:10:20,156 - finetune_modelnet - INFO - args.experiment_path : /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/finetune_modelnet40_new_opti_last_model_lr_5e_4_Modified_Batch_Size__93_55__/Voting/finetune_modelnet/cfgs/test_default
-2023-11-16 03:10:20,156 - finetune_modelnet - INFO - args.tfboard_path : /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/finetune_modelnet40_new_opti_last_model_lr_5e_4_Modified_Batch_Size__93_55__/Voting/finetune_modelnet/cfgs/TFBoard/test_default
+2023-11-16 03:10:20,156 - finetune_modelnet - INFO - args.experiment_path : ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/finetune_modelnet40_new_opti_last_model_lr_5e_4_Modified_Batch_Size__93_55__/Voting/finetune_modelnet/cfgs/test_default
+2023-11-16 03:10:20,156 - finetune_modelnet - INFO - args.tfboard_path : ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/finetune_modelnet40_new_opti_last_model_lr_5e_4_Modified_Batch_Size__93_55__/Voting/finetune_modelnet/cfgs/TFBoard/test_default
 2023-11-16 03:10:20,156 - finetune_modelnet - INFO - args.log_name : finetune_modelnet
 2023-11-16 03:10:20,157 - finetune_modelnet - INFO - args.use_gpu : True
 2023-11-16 03:10:20,157 - finetune_modelnet - INFO - args.distributed : False
@@ -39,7 +39,7 @@
 2023-11-16 03:10:20,158 - finetune_modelnet - INFO - config.dataset.train = edict()
 2023-11-16 03:10:20,158 - finetune_modelnet - INFO - config.dataset.train._base_ = edict()
 2023-11-16 03:10:20,158 - finetune_modelnet - INFO - config.dataset.train._base_.NAME : ModelNet
-2023-11-16 03:10:20,158 - finetune_modelnet - INFO - config.dataset.train._base_.DATA_PATH : /export/livia/home/vision/Abahri/projects/Point-MAE/Point-MAE-org/Point-MAE/data/ModelNet/modelnet40_normal_resampled
+2023-11-16 03:10:20,158 - finetune_modelnet - INFO - config.dataset.train._base_.DATA_PATH : ./Point-MAE/data/ModelNet/modelnet40_normal_resampled
 2023-11-16 03:10:20,158 - finetune_modelnet - INFO - config.dataset.train._base_.N_POINTS : 8192
 2023-11-16 03:10:20,158 - finetune_modelnet - INFO - config.dataset.train._base_.NUM_CATEGORY : 40
 2023-11-16 03:10:20,159 - finetune_modelnet - INFO - config.dataset.train._base_.USE_NORMALS : False
@@ -49,7 +49,7 @@
 2023-11-16 03:10:20,159 - finetune_modelnet - INFO - config.dataset.val = edict()
 2023-11-16 03:10:20,159 - finetune_modelnet - INFO - config.dataset.val._base_ = edict()
 2023-11-16 03:10:20,159 - finetune_modelnet - INFO - config.dataset.val._base_.NAME : ModelNet
-2023-11-16 03:10:20,159 - finetune_modelnet - INFO - config.dataset.val._base_.DATA_PATH : /export/livia/home/vision/Abahri/projects/Point-MAE/Point-MAE-org/Point-MAE/data/ModelNet/modelnet40_normal_resampled
+2023-11-16 03:10:20,159 - finetune_modelnet - INFO - config.dataset.val._base_.DATA_PATH : ./Point-MAE/data/ModelNet/modelnet40_normal_resampled
 2023-11-16 03:10:20,159 - finetune_modelnet - INFO - config.dataset.val._base_.N_POINTS : 8192
 2023-11-16 03:10:20,159 - finetune_modelnet - INFO - config.dataset.val._base_.NUM_CATEGORY : 40
 2023-11-16 03:10:20,160 - finetune_modelnet - INFO - config.dataset.val._base_.USE_NORMALS : False
@@ -59,7 +59,7 @@
 2023-11-16 03:10:20,160 - finetune_modelnet - INFO - config.dataset.test = edict()
 2023-11-16 03:10:20,160 - finetune_modelnet - INFO - config.dataset.test._base_ = edict()
 2023-11-16 03:10:20,160 - finetune_modelnet - INFO - config.dataset.test._base_.NAME : ModelNet
-2023-11-16 03:10:20,160 - finetune_modelnet - INFO - config.dataset.test._base_.DATA_PATH : /export/livia/home/vision/Abahri/projects/Point-MAE/Point-MAE-org/Point-MAE/data/ModelNet/modelnet40_normal_resampled
+2023-11-16 03:10:20,160 - finetune_modelnet - INFO - config.dataset.test._base_.DATA_PATH : ./Point-MAE/data/ModelNet/modelnet40_normal_resampled
 2023-11-16 03:10:20,160 - finetune_modelnet - INFO - config.dataset.test._base_.N_POINTS : 8192
 2023-11-16 03:10:20,160 - finetune_modelnet - INFO - config.dataset.test._base_.NUM_CATEGORY : 40
 2023-11-16 03:10:20,161 - finetune_modelnet - INFO - config.dataset.test._base_.USE_NORMALS : False
@@ -84,7 +84,7 @@
 2023-11-16 03:10:20,162 - finetune_modelnet - INFO - Distributed training: False
 2023-11-16 03:10:20,163 - finetune_modelnet - INFO - Set random seed to 0, deterministic: False
 2023-11-16 03:10:20,164 - finetune_modelnet - INFO - Tester start ... 
-2023-11-16 03:10:24,798 - finetune_modelnet - INFO - Loading weights from /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/finetune_modelnet40_new_opti_last_model_lr_5e_4_Modified_Batch_Size__93_55__/vit_large_patch16_exp_temp_best.pth...
+2023-11-16 03:10:24,798 - finetune_modelnet - INFO - Loading weights from ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/finetune_modelnet40_new_opti_last_model_lr_5e_4_Modified_Batch_Size__93_55__/vit_large_patch16_exp_temp_best.pth...
 2023-11-16 03:10:28,555 - finetune_modelnet - INFO - ckpts @ 48 epoch( performance = No Metrics)
 2023-11-16 03:10:40,805 - finetune_modelnet - INFO - [TEST] acc = 93.5575
 2023-11-16 03:10:40,806 - finetune_modelnet - INFO - [TEST_VOTE]

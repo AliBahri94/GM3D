@@ -3,8 +3,8 @@ import numpy as np
 import random
 import os
 
-root = '../data/ModelNet/modelnet40_normal_resampled'
-target = '../data/ModelNetFewshot'
+root = '../ModelNet/modelnet40_normal_resampled'
+target = '../ModelNetFewshot'
 
 train_data_path = os.path.join(root, 'modelnet40_train_8192pts_fps.dat')
 test_data_path = os.path.join(root, 'modelnet40_test_8192pts_fps.dat')

@@ -17,9 +17,9 @@
         "train": {
             "_base_": {
                 "NAME": "ShapeNet",
-                "DATA_PATH": "/export/livia/home/vision/Abahri/projects/Point-M2AE/Point-M2AE/data/ShapeNet55-34/ShapeNet-55",
+                "DATA_PATH": "./Point-M2AE/data/ShapeNet55-34/ShapeNet-55",
                 "N_POINTS": 8192,
-                "PC_PATH": "/export/livia/home/vision/Abahri/projects/Point-M2AE/Point-M2AE/data/ShapeNet55-34/shapenet_pc"
+                "PC_PATH": "./Point-M2AE/data/ShapeNet55-34/shapenet_pc"
             },
             "others": {
                 "subset": "train",
@@ -30,9 +30,9 @@
         "val": {
             "_base_": {
                 "NAME": "ShapeNet",
-                "DATA_PATH": "/export/livia/home/vision/Abahri/projects/Point-M2AE/Point-M2AE/data/ShapeNet55-34/ShapeNet-55",
+                "DATA_PATH": "./Point-M2AE/data/ShapeNet55-34/ShapeNet-55",
                 "N_POINTS": 8192,
-                "PC_PATH": "/export/livia/home/vision/Abahri/projects/Point-M2AE/Point-M2AE/data/ShapeNet55-34/shapenet_pc"
+                "PC_PATH": "./Point-M2AE/data/ShapeNet55-34/shapenet_pc"
             },
             "others": {
                 "subset": "test",
@@ -43,9 +43,9 @@
         "test": {
             "_base_": {
                 "NAME": "ShapeNet",
-                "DATA_PATH": "/export/livia/home/vision/Abahri/projects/Point-M2AE/Point-M2AE/data/ShapeNet55-34/ShapeNet-55",
+                "DATA_PATH": "./Point-M2AE/data/ShapeNet55-34/ShapeNet-55",
                 "N_POINTS": 8192,
-                "PC_PATH": "/export/livia/home/vision/Abahri/projects/Point-M2AE/Point-M2AE/data/ShapeNet55-34/shapenet_pc"
+                "PC_PATH": "./Point-M2AE/data/ShapeNet55-34/shapenet_pc"
             },
             "others": {
                 "subset": "test",

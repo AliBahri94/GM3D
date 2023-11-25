@@ -136,7 +136,7 @@ def get_args_parser():
     # * Finetuning params
     #parser.add_argument('--finetune', default='./experimets/2_PMAE_MSE_Chamfer_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_MAE_as_Dino/mae_vit_base_patch16_dec512d8b_hpm_relative_in1k_ep200_temp_last.pth',
     parser.add_argument('--finetune', default='./new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/mae_vit_base_patch16_dec512d8b_hpm_relative_in1k_ep200_temp_last.pth',
-    #parser.add_argument('--finetune', default='/export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments/2_PMAE_Chamfer_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders/finetune_hardest_new_opti_with_last_model_lr_5e_4/vit_large_patch16_exp_temp_best.pth',
+    #parser.add_argument('--finetune', default='./HPM/new_experiments/2_PMAE_Chamfer_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders/finetune_hardest_new_opti_with_last_model_lr_5e_4/vit_large_patch16_exp_temp_best.pth',
     #parser.add_argument('--finetune', default='./pretrain_PMAE.pth',
                         help='finetune from checkpoint')
     

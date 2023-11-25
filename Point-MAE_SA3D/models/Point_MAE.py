@@ -403,7 +403,7 @@ class Point_MAE(nn.Module):
         x_vis, mask = self.MAE_encoder(neighborhood, center, noaug = noaug)
         B,_,C = x_vis.shape # B VIS C
         
-        ################# Ali Agha
+        ################# ****
         if (noaug == True):
             return x_vis
         #################

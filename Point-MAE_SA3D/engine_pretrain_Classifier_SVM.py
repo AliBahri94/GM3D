@@ -250,7 +250,7 @@ def train_one_epoch(model: torch.nn.Module, classifier: torch.nn.Module,
         #loss_cls.backward()
         #optimizer_cls.step()
 
-        ############## Added by Ali Bahri
+        ############## Added by ******
         #loss.backward()
         #optimizer.step()
         #grad_norm = 0
@@ -560,7 +560,7 @@ def train_one_epoch_seperated(model: torch.nn.Module, classifier: torch.nn.Modul
         #loss_cls.backward()
         #optimizer_cls.step()
 
-        ############## Added by Ali Bahri
+        ############## Added by ******
         #loss.backward()
         #optimizer.step()
         #grad_norm = 0

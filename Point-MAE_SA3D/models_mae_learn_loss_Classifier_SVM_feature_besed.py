@@ -538,7 +538,7 @@ class MaskedAutoencoderViT__(nn.Module):
 
         B,_,C = x_vis.shape # B VIS C
 
-        ################# Ali Agha
+        ################# ****
         if (noaug == True):
             return x_vis
         #################
@@ -590,7 +590,7 @@ class MaskedAutoencoderViT__(nn.Module):
 
         B,_,C = x_vis.shape # B VIS C
 
-        ################# Ali Agha
+        ################# ****
         if (noaug == True):
             return x_vis
         #################
@@ -642,7 +642,7 @@ class MaskedAutoencoderViT__(nn.Module):
 
         B,_,C = x_vis.shape # B VIS C
 
-        ################# Ali Agha
+        ################# ****
         if (noaug == True):
             return x_vis
         #################
@@ -700,7 +700,7 @@ class MaskedAutoencoderViT__(nn.Module):
 
         B,_,C = x_vis.shape # B VIS C
 
-        ################# Ali Agha
+        ################# ****
         if (noaug == True):
             return x_vis
         #################
@@ -1013,7 +1013,7 @@ class MaskedAutoencoderViT(nn.Module):
 
         B,_,C = x_vis.shape # B VIS C
 
-        ################# Ali Agha
+        ################# ****
         if (noaug == True):
             return x_vis
         #################

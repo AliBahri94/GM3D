@@ -17,9 +17,9 @@
         "train": {
             "_base_": {
                 "NAME": "ShapeNet",
-                "DATA_PATH": "/export/livia/home/vision/Abahri/projects/Point-MAE/Point-MAE-org/Point-MAE/data/ShapeNet55-34/ShapeNet-55",
+                "DATA_PATH": "./Point-MAE/data/ShapeNet55-34/ShapeNet-55",
                 "N_POINTS": 8192,
-                "PC_PATH": "/export/livia/home/vision/Abahri/projects/Point-MAE/Point-MAE-org/Point-MAE/data/ShapeNet55-34/shapenet_pc"
+                "PC_PATH": "./Point-MAE/data/ShapeNet55-34/shapenet_pc"
             },
             "others": {
                 "subset": "train",
@@ -30,9 +30,9 @@
         "val": {
             "_base_": {
                 "NAME": "ShapeNet",
-                "DATA_PATH": "/export/livia/home/vision/Abahri/projects/Point-MAE/Point-MAE-org/Point-MAE/data/ShapeNet55-34/ShapeNet-55",
+                "DATA_PATH": "./Point-MAE/data/ShapeNet55-34/ShapeNet-55",
                 "N_POINTS": 8192,
-                "PC_PATH": "/export/livia/home/vision/Abahri/projects/Point-MAE/Point-MAE-org/Point-MAE/data/ShapeNet55-34/shapenet_pc"
+                "PC_PATH": "./Point-MAE/data/ShapeNet55-34/shapenet_pc"
             },
             "others": {
                 "subset": "test",
@@ -43,7 +43,7 @@
         "extra_train_svm": {
             "_base_": {
                 "NAME": "ModelNet",
-                "DATA_PATH": "/export/livia/home/vision/Abahri/projects/Point-MAE/Point-MAE-org/Point-MAE/data/ModelNet/modelnet40_normal_resampled",
+                "DATA_PATH": "./Point-MAE/data/ModelNet/modelnet40_normal_resampled",
                 "N_POINTS": 8192,
                 "NUM_CATEGORY": 40,
                 "USE_NORMALS": false
@@ -56,7 +56,7 @@
         "extra_test_svm": {
             "_base_": {
                 "NAME": "ModelNet",
-                "DATA_PATH": "/export/livia/home/vision/Abahri/projects/Point-MAE/Point-MAE-org/Point-MAE/data/ModelNet/modelnet40_normal_resampled",
+                "DATA_PATH": "./Point-MAE/data/ModelNet/modelnet40_normal_resampled",
                 "N_POINTS": 8192,
                 "NUM_CATEGORY": 40,
                 "USE_NORMALS": false
@@ -69,9 +69,9 @@
         "test": {
             "_base_": {
                 "NAME": "ShapeNet",
-                "DATA_PATH": "/export/livia/home/vision/Abahri/projects/Point-MAE/Point-MAE-org/Point-MAE/data/ShapeNet55-34/ShapeNet-55",
+                "DATA_PATH": "./Point-MAE/data/ShapeNet55-34/ShapeNet-55",
                 "N_POINTS": 8192,
-                "PC_PATH": "/export/livia/home/vision/Abahri/projects/Point-MAE/Point-MAE-org/Point-MAE/data/ShapeNet55-34/shapenet_pc"
+                "PC_PATH": "./Point-MAE/data/ShapeNet55-34/shapenet_pc"
             },
             "others": {
                 "subset": "test",

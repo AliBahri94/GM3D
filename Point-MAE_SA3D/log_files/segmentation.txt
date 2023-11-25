@@ -1,5 +1,5 @@
 2023-11-11 19:09:22,956 - Model - INFO - PARAMETER ...
-2023-11-11 19:09:22,956 - Model - INFO - Namespace(batch_size=16, ckpts='/export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/mae_vit_base_patch16_dec512d8b_hpm_relative_in1k_ep200_temp_last.pth', epoch=300, gpu='3', learning_rate=0.0002, log_dir='/export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002', model='pt', normal=False, npoint=2048, root='/export/livia/home/vision/Abahri/projects/Point-MAE/Point-MAE-org/Point-MAE/data/shapenetcore_partanno_segmentation_benchmark_v0_normal/', warmup_epoch=10)
+2023-11-11 19:09:22,956 - Model - INFO - Namespace(batch_size=16, ckpts='./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/mae_vit_base_patch16_dec512d8b_hpm_relative_in1k_ep200_temp_last.pth', epoch=300, gpu='3', learning_rate=0.0002, log_dir='./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002', model='pt', normal=False, npoint=2048, root='./Point-MAE/data/shapenetcore_partanno_segmentation_benchmark_v0_normal/', warmup_epoch=10)
 2023-11-11 19:09:23,104 - Model - INFO - The number of training data is: 13998
 2023-11-11 19:09:23,104 - Model - INFO - The number of test data is: 2874
 2023-11-11 19:09:26,557 - Model - INFO - Epoch 1 (1/300):
@@ -24,7 +24,7 @@
 2023-11-11 19:12:37,099 - Model - INFO - eval mIoU of Table          0.768821
 2023-11-11 19:12:37,099 - Model - INFO - Epoch 1 test Accuracy: 0.868260  Class avg mIOU: 0.556835   Inctance avg mIOU: 0.708488
 2023-11-11 19:12:37,099 - Model - INFO - Save model...
-2023-11-11 19:12:37,100 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-11 19:12:37,100 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-11 19:12:40,471 - Model - INFO - Saving model....
 2023-11-11 19:12:40,472 - Model - INFO - Best accuracy is: 0.86826
 2023-11-11 19:12:40,472 - Model - INFO - Best class avg mIOU is: 0.55683
@@ -51,7 +51,7 @@
 2023-11-11 19:15:51,458 - Model - INFO - eval mIoU of Table          0.774332
 2023-11-11 19:15:51,459 - Model - INFO - Epoch 2 test Accuracy: 0.878759  Class avg mIOU: 0.573816   Inctance avg mIOU: 0.725717
 2023-11-11 19:15:51,459 - Model - INFO - Save model...
-2023-11-11 19:15:51,459 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-11 19:15:51,459 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-11 19:15:54,974 - Model - INFO - Saving model....
 2023-11-11 19:15:54,975 - Model - INFO - Best accuracy is: 0.87876
 2023-11-11 19:15:54,975 - Model - INFO - Best class avg mIOU is: 0.57382
@@ -78,7 +78,7 @@
 2023-11-11 19:19:07,652 - Model - INFO - eval mIoU of Table          0.804102
 2023-11-11 19:19:07,653 - Model - INFO - Epoch 3 test Accuracy: 0.924952  Class avg mIOU: 0.677545   Inctance avg mIOU: 0.807470
 2023-11-11 19:19:07,653 - Model - INFO - Save model...
-2023-11-11 19:19:07,653 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-11 19:19:07,653 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-11 19:19:10,883 - Model - INFO - Saving model....
 2023-11-11 19:19:10,883 - Model - INFO - Best accuracy is: 0.92495
 2023-11-11 19:19:10,883 - Model - INFO - Best class avg mIOU is: 0.67754
@@ -105,7 +105,7 @@
 2023-11-11 19:22:20,884 - Model - INFO - eval mIoU of Table          0.818024
 2023-11-11 19:22:20,885 - Model - INFO - Epoch 4 test Accuracy: 0.930351  Class avg mIOU: 0.722701   Inctance avg mIOU: 0.825316
 2023-11-11 19:22:20,885 - Model - INFO - Save model...
-2023-11-11 19:22:20,885 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-11 19:22:20,885 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-11 19:22:24,369 - Model - INFO - Saving model....
 2023-11-11 19:22:24,369 - Model - INFO - Best accuracy is: 0.93035
 2023-11-11 19:22:24,369 - Model - INFO - Best class avg mIOU is: 0.72270
@@ -132,7 +132,7 @@
 2023-11-11 19:25:35,463 - Model - INFO - eval mIoU of Table          0.814578
 2023-11-11 19:25:35,463 - Model - INFO - Epoch 5 test Accuracy: 0.931443  Class avg mIOU: 0.769909   Inctance avg mIOU: 0.832261
 2023-11-11 19:25:35,463 - Model - INFO - Save model...
-2023-11-11 19:25:35,463 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-11 19:25:35,463 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-11 19:25:38,931 - Model - INFO - Saving model....
 2023-11-11 19:25:38,931 - Model - INFO - Best accuracy is: 0.93144
 2023-11-11 19:25:38,932 - Model - INFO - Best class avg mIOU is: 0.76991
@@ -183,7 +183,7 @@
 2023-11-11 19:32:00,338 - Model - INFO - eval mIoU of Table          0.822273
 2023-11-11 19:32:00,338 - Model - INFO - Epoch 7 test Accuracy: 0.932471  Class avg mIOU: 0.792648   Inctance avg mIOU: 0.835097
 2023-11-11 19:32:00,338 - Model - INFO - Save model...
-2023-11-11 19:32:00,338 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-11 19:32:00,338 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-11 19:32:03,920 - Model - INFO - Saving model....
 2023-11-11 19:32:03,921 - Model - INFO - Best accuracy is: 0.93247
 2023-11-11 19:32:03,921 - Model - INFO - Best class avg mIOU is: 0.79265
@@ -210,7 +210,7 @@
 2023-11-11 19:35:16,405 - Model - INFO - eval mIoU of Table          0.823370
 2023-11-11 19:35:16,406 - Model - INFO - Epoch 8 test Accuracy: 0.935871  Class avg mIOU: 0.813992   Inctance avg mIOU: 0.843147
 2023-11-11 19:35:16,406 - Model - INFO - Save model...
-2023-11-11 19:35:16,406 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-11 19:35:16,406 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-11 19:35:22,125 - Model - INFO - Saving model....
 2023-11-11 19:35:22,125 - Model - INFO - Best accuracy is: 0.93587
 2023-11-11 19:35:22,125 - Model - INFO - Best class avg mIOU is: 0.81399
@@ -381,7 +381,7 @@
 2023-11-11 19:57:42,535 - Model - INFO - eval mIoU of Table          0.824774
 2023-11-11 19:57:42,535 - Model - INFO - Epoch 15 test Accuracy: 0.936434  Class avg mIOU: 0.801108   Inctance avg mIOU: 0.843541
 2023-11-11 19:57:42,535 - Model - INFO - Save model...
-2023-11-11 19:57:42,535 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-11 19:57:42,535 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-11 19:57:45,845 - Model - INFO - Saving model....
 2023-11-11 19:57:45,845 - Model - INFO - Best accuracy is: 0.93643
 2023-11-11 19:57:45,845 - Model - INFO - Best class avg mIOU is: 0.81399
@@ -480,7 +480,7 @@
 2023-11-11 20:10:27,138 - Model - INFO - eval mIoU of Table          0.828730
 2023-11-11 20:10:27,139 - Model - INFO - Epoch 19 test Accuracy: 0.935954  Class avg mIOU: 0.814500   Inctance avg mIOU: 0.844446
 2023-11-11 20:10:27,139 - Model - INFO - Save model...
-2023-11-11 20:10:27,139 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-11 20:10:27,139 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-11 20:10:30,579 - Model - INFO - Saving model....
 2023-11-11 20:10:30,579 - Model - INFO - Best accuracy is: 0.93643
 2023-11-11 20:10:30,579 - Model - INFO - Best class avg mIOU is: 0.81450
@@ -531,7 +531,7 @@
 2023-11-11 20:16:54,844 - Model - INFO - eval mIoU of Table          0.823676
 2023-11-11 20:16:54,845 - Model - INFO - Epoch 21 test Accuracy: 0.937524  Class avg mIOU: 0.810835   Inctance avg mIOU: 0.844934
 2023-11-11 20:16:54,845 - Model - INFO - Save model...
-2023-11-11 20:16:54,845 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-11 20:16:54,845 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-11 20:16:58,233 - Model - INFO - Saving model....
 2023-11-11 20:16:58,233 - Model - INFO - Best accuracy is: 0.93752
 2023-11-11 20:16:58,233 - Model - INFO - Best class avg mIOU is: 0.81450
@@ -582,7 +582,7 @@
 2023-11-11 20:23:20,011 - Model - INFO - eval mIoU of Table          0.823719
 2023-11-11 20:23:20,011 - Model - INFO - Epoch 23 test Accuracy: 0.936379  Class avg mIOU: 0.816620   Inctance avg mIOU: 0.845451
 2023-11-11 20:23:20,011 - Model - INFO - Save model...
-2023-11-11 20:23:20,011 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-11 20:23:20,011 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-11 20:23:23,671 - Model - INFO - Saving model....
 2023-11-11 20:23:23,671 - Model - INFO - Best accuracy is: 0.93752
 2023-11-11 20:23:23,671 - Model - INFO - Best class avg mIOU is: 0.81662
@@ -609,7 +609,7 @@
 2023-11-11 20:26:34,205 - Model - INFO - eval mIoU of Table          0.833111
 2023-11-11 20:26:34,205 - Model - INFO - Epoch 24 test Accuracy: 0.938297  Class avg mIOU: 0.819640   Inctance avg mIOU: 0.850330
 2023-11-11 20:26:34,205 - Model - INFO - Save model...
-2023-11-11 20:26:34,205 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-11 20:26:34,205 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-11 20:26:37,683 - Model - INFO - Saving model....
 2023-11-11 20:26:37,683 - Model - INFO - Best accuracy is: 0.93830
 2023-11-11 20:26:37,683 - Model - INFO - Best class avg mIOU is: 0.81964
@@ -1260,7 +1260,7 @@
 2023-11-11 21:52:33,646 - Model - INFO - eval mIoU of Table          0.830545
 2023-11-11 21:52:33,647 - Model - INFO - Epoch 51 test Accuracy: 0.939896  Class avg mIOU: 0.817279   Inctance avg mIOU: 0.850927
 2023-11-11 21:52:33,647 - Model - INFO - Save model...
-2023-11-11 21:52:33,647 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-11 21:52:33,647 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-11 21:52:37,037 - Model - INFO - Saving model....
 2023-11-11 21:52:37,037 - Model - INFO - Best accuracy is: 0.93999
 2023-11-11 21:52:37,038 - Model - INFO - Best class avg mIOU is: 0.82463
@@ -1359,7 +1359,7 @@
 2023-11-11 22:05:23,319 - Model - INFO - eval mIoU of Table          0.828608
 2023-11-11 22:05:23,319 - Model - INFO - Epoch 55 test Accuracy: 0.938574  Class avg mIOU: 0.821719   Inctance avg mIOU: 0.851061
 2023-11-11 22:05:23,319 - Model - INFO - Save model...
-2023-11-11 22:05:23,320 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-11 22:05:23,320 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-11 22:05:26,704 - Model - INFO - Saving model....
 2023-11-11 22:05:26,704 - Model - INFO - Best accuracy is: 0.93999
 2023-11-11 22:05:26,704 - Model - INFO - Best class avg mIOU is: 0.82463
@@ -1554,7 +1554,7 @@
 2023-11-11 22:30:54,172 - Model - INFO - eval mIoU of Table          0.826250
 2023-11-11 22:30:54,172 - Model - INFO - Epoch 63 test Accuracy: 0.939486  Class avg mIOU: 0.825877   Inctance avg mIOU: 0.852103
 2023-11-11 22:30:54,172 - Model - INFO - Save model...
-2023-11-11 22:30:54,172 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-11 22:30:54,172 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-11 22:30:57,451 - Model - INFO - Saving model....
 2023-11-11 22:30:57,451 - Model - INFO - Best accuracy is: 0.93999
 2023-11-11 22:30:57,451 - Model - INFO - Best class avg mIOU is: 0.82926
@@ -1821,7 +1821,7 @@
 2023-11-11 23:06:02,934 - Model - INFO - eval mIoU of Table          0.824822
 2023-11-11 23:06:02,935 - Model - INFO - Epoch 74 test Accuracy: 0.940591  Class avg mIOU: 0.827021   Inctance avg mIOU: 0.852754
 2023-11-11 23:06:02,935 - Model - INFO - Save model...
-2023-11-11 23:06:02,935 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-11 23:06:02,935 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-11 23:06:06,420 - Model - INFO - Saving model....
 2023-11-11 23:06:06,420 - Model - INFO - Best accuracy is: 0.94133
 2023-11-11 23:06:06,420 - Model - INFO - Best class avg mIOU is: 0.82926
@@ -1992,7 +1992,7 @@
 2023-11-11 23:28:27,350 - Model - INFO - eval mIoU of Table          0.829893
 2023-11-11 23:28:27,351 - Model - INFO - Epoch 81 test Accuracy: 0.940545  Class avg mIOU: 0.829886   Inctance avg mIOU: 0.854129
 2023-11-11 23:28:27,351 - Model - INFO - Save model...
-2023-11-11 23:28:27,351 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-11 23:28:27,351 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-11 23:28:30,714 - Model - INFO - Saving model....
 2023-11-11 23:28:30,715 - Model - INFO - Best accuracy is: 0.94133
 2023-11-11 23:28:30,715 - Model - INFO - Best class avg mIOU is: 0.83269
@@ -3195,7 +3195,7 @@
 2023-11-12 02:33:35,937 - Model - INFO - eval mIoU of Table          0.828007
 2023-11-12 02:33:35,938 - Model - INFO - Epoch 131 test Accuracy: 0.942629  Class avg mIOU: 0.825957   Inctance avg mIOU: 0.855672
 2023-11-12 02:33:35,938 - Model - INFO - Save model...
-2023-11-12 02:33:35,938 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-12 02:33:35,938 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-12 02:33:39,262 - Model - INFO - Saving model....
 2023-11-12 02:33:39,263 - Model - INFO - Best accuracy is: 0.94281
 2023-11-12 02:33:39,263 - Model - INFO - Best class avg mIOU is: 0.83552
@@ -4062,7 +4062,7 @@
 2023-11-12 04:53:44,587 - Model - INFO - eval mIoU of Table          0.818552
 2023-11-12 04:53:44,588 - Model - INFO - Epoch 167 test Accuracy: 0.943726  Class avg mIOU: 0.836407   Inctance avg mIOU: 0.855731
 2023-11-12 04:53:44,588 - Model - INFO - Save model...
-2023-11-12 04:53:44,588 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-12 04:53:44,588 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-12 04:53:48,159 - Model - INFO - Saving model....
 2023-11-12 04:53:48,160 - Model - INFO - Best accuracy is: 0.94478
 2023-11-12 04:53:48,160 - Model - INFO - Best class avg mIOU is: 0.83795
@@ -4185,7 +4185,7 @@
 2023-11-12 05:13:19,575 - Model - INFO - eval mIoU of Table          0.822276
 2023-11-12 05:13:19,576 - Model - INFO - Epoch 172 test Accuracy: 0.945146  Class avg mIOU: 0.839155   Inctance avg mIOU: 0.858484
 2023-11-12 05:13:19,576 - Model - INFO - Save model...
-2023-11-12 05:13:19,576 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-12 05:13:19,576 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-12 05:13:22,957 - Model - INFO - Saving model....
 2023-11-12 05:13:22,957 - Model - INFO - Best accuracy is: 0.94515
 2023-11-12 05:13:22,957 - Model - INFO - Best class avg mIOU is: 0.83916
@@ -5292,7 +5292,7 @@
 2023-11-12 08:11:56,466 - Model - INFO - eval mIoU of Table          0.816529
 2023-11-12 08:11:56,466 - Model - INFO - Epoch 218 test Accuracy: 0.946781  Class avg mIOU: 0.841165   Inctance avg mIOU: 0.858951
 2023-11-12 08:11:56,466 - Model - INFO - Save model...
-2023-11-12 08:11:56,466 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-12 08:11:56,466 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-12 08:11:59,837 - Model - INFO - Saving model....
 2023-11-12 08:11:59,837 - Model - INFO - Best accuracy is: 0.94679
 2023-11-12 08:11:59,837 - Model - INFO - Best class avg mIOU is: 0.84336
@@ -5463,7 +5463,7 @@
 2023-11-12 08:39:07,828 - Model - INFO - eval mIoU of Table          0.817430
 2023-11-12 08:39:07,828 - Model - INFO - Epoch 225 test Accuracy: 0.946959  Class avg mIOU: 0.842448   Inctance avg mIOU: 0.859649
 2023-11-12 08:39:07,828 - Model - INFO - Save model...
-2023-11-12 08:39:07,829 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-12 08:39:07,829 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-12 08:39:11,192 - Model - INFO - Saving model....
 2023-11-12 08:39:11,192 - Model - INFO - Best accuracy is: 0.94696
 2023-11-12 08:39:11,192 - Model - INFO - Best class avg mIOU is: 0.84439
@@ -6162,7 +6162,7 @@
 2023-11-12 10:31:22,851 - Model - INFO - eval mIoU of Table          0.816660
 2023-11-12 10:31:22,852 - Model - INFO - Epoch 254 test Accuracy: 0.947585  Class avg mIOU: 0.844930   Inctance avg mIOU: 0.860422
 2023-11-12 10:31:22,852 - Model - INFO - Save model...
-2023-11-12 10:31:22,852 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-12 10:31:22,852 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-12 10:31:26,326 - Model - INFO - Saving model....
 2023-11-12 10:31:26,326 - Model - INFO - Best accuracy is: 0.94761
 2023-11-12 10:31:26,326 - Model - INFO - Best class avg mIOU is: 0.84493
@@ -6429,7 +6429,7 @@
 2023-11-12 11:14:10,804 - Model - INFO - eval mIoU of Table          0.816892
 2023-11-12 11:14:10,804 - Model - INFO - Epoch 265 test Accuracy: 0.947295  Class avg mIOU: 0.843335   Inctance avg mIOU: 0.860478
 2023-11-12 11:14:10,804 - Model - INFO - Save model...
-2023-11-12 11:14:10,804 - Model - INFO - Saving at /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
+2023-11-12 11:14:10,804 - Model - INFO - Saving at ./HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/Segmentation_last_model_lr_0_0002/checkpoints/best_model.pth
 2023-11-12 11:14:14,264 - Model - INFO - Saving model....
 2023-11-12 11:14:14,264 - Model - INFO - Best accuracy is: 0.94761
 2023-11-12 11:14:14,264 - Model - INFO - Best class avg mIOU is: 0.84493

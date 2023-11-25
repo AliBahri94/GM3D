@@ -17,7 +17,7 @@
         "train": {
             "_base_": {
                 "NAME": "ScanObjectNN",
-                "ROOT": "/export/livia/home/vision/Abahri/projects/Point-MAE/Point-MAE-org/Point-MAE/data/ScanObjectNN/main_split_nobg"
+                "ROOT": "./Point-MAE/data/ScanObjectNN/main_split_nobg"
             },
             "others": {
                 "subset": "train",
@@ -27,7 +27,7 @@
         "val": {
             "_base_": {
                 "NAME": "ScanObjectNN",
-                "ROOT": "/export/livia/home/vision/Abahri/projects/Point-MAE/Point-MAE-org/Point-MAE/data/ScanObjectNN/main_split_nobg"
+                "ROOT": "./Point-MAE/data/ScanObjectNN/main_split_nobg"
             },
             "others": {
                 "subset": "test",
@@ -37,7 +37,7 @@
         "test": {
             "_base_": {
                 "NAME": "ScanObjectNN",
-                "ROOT": "/export/livia/home/vision/Abahri/projects/Point-MAE/Point-MAE-org/Point-MAE/data/ScanObjectNN/main_split_nobg"
+                "ROOT": "./Point-MAE/data/ScanObjectNN/main_split_nobg"
             },
             "others": {
                 "subset": "test",

@@ -17,7 +17,7 @@
         "train": {
             "_base_": {
                 "NAME": "ScanObjectNN",
-                "ROOT": "/export/livia/home/vision/Abahri/projects/Point-M2AE/Point-M2AE-Updated/Point-M2AE/data/ScanObjectNN/main_split",
+                "ROOT": "./Point-M2AE/data/ScanObjectNN/main_split",
                 "SPLIT": "PB",
                 "N_POINTS": 2048,
                 "subset": "train",
@@ -31,7 +31,7 @@
         "val": {
             "_base_": {
                 "NAME": "ScanObjectNN",
-                "ROOT": "/export/livia/home/vision/Abahri/projects/Point-M2AE/Point-M2AE-Updated/Point-M2AE/data/ScanObjectNN/main_split",
+                "ROOT": "./Point-M2AE/data/ScanObjectNN/main_split",
                 "SPLIT": "PB",
                 "N_POINTS": 2048,
                 "subset": "test",
@@ -45,7 +45,7 @@
         "test": {
             "_base_": {
                 "NAME": "ScanObjectNN",
-                "ROOT": "/export/livia/home/vision/Abahri/projects/Point-M2AE/Point-M2AE-Updated/Point-M2AE/data/ScanObjectNN/main_split",
+                "ROOT": "./Point-M2AE/data/ScanObjectNN/main_split",
                 "SPLIT": "PB",
                 "N_POINTS": 2048
             },

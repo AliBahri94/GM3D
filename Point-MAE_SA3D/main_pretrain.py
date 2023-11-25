@@ -116,7 +116,7 @@ def get_args_parser():
                         help='Use MSE loss for features as target.')
     parser.add_argument('--relative', action='store_true', help='Use relative learning loss or not.')
     parser.set_defaults(relative=True)
-    #parser.add_argument('--dino_path', default='/export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/pretrain_PMAE.pth', type=str,
+    #parser.add_argument('--dino_path', default='./HPM/pretrain_PMAE.pth', type=str,
     #parser.add_argument('--dino_path', default='none', type=str,
     #                    help='Pre-trained DINO for feature distillation (ViT-B/16).')
     parser.add_argument('--clip_path', default='none', type=str,
@@ -138,7 +138,7 @@ def get_args_parser():
                         help='epochs to warmup LR, 40 for MAE and 10 for SimMIM')
 
     # Dataset parameters
-    parser.add_argument('--data_path', default='/export/livia/home/vision/Abahri/projects/Hard_Patches/HPM/data/', type=str,
+    parser.add_argument('--data_path', default='./HPM/data/', type=str,
                         help='dataset path')
 
 
@@ -152,7 +152,7 @@ def get_args_parser():
     parser.add_argument('--classification', default=False, type=bool)
     parser.add_argument('--loss_multiply_by', default=[13.889 , 1000], type=list)    #13.889 , 1000
     parser.add_argument('--after_epoch', default= 15, type=int, help='feature or usual')
-    parser.add_argument('--dino_path', default='/export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/pretrain_PMAE.pth', type=str,
+    parser.add_argument('--dino_path', default='./HPM/pretrain_PMAE.pth', type=str,
     #parser.add_argument('--dino_path', default='none', type=str,
                         help='Pre-trained DINO for feature distillation (ViT-B/16).')
     parser.add_argument('--learn_feature_loss', default='dino', type=str, help='Use MSE loss for features as target.')

@@ -2,7 +2,7 @@ import re
 import matplotlib.pyplot as plt
 
 # File paths for the uploaded logs
-base_add = "/export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/logs_PMAE_PM2AE_PMAE-SA3D_PM2AE-SA3D/"
+base_add = "./HPM/logs_PMAE_PM2AE_PMAE-SA3D_PM2AE-SA3D/"
 #file_paths = [base_add + "PM2AE.log", base_add + "PM2AE-SA3DF.log", base_add + "PMAE.log", base_add + "PMAE-SA3DF.log"]
 
 file_paths = [base_add + "PM2AE.log", base_add + "PM2AE-SA3DF.log"]

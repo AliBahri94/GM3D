@@ -17,7 +17,7 @@
         "train": {
             "_base_": {
                 "NAME": "ModelNet",
-                "DATA_PATH": "/export/livia/home/vision/Abahri/projects/Point-M2AE/Point-M2AE-Updated/Point-M2AE/data/ModelNet/modelnet40_normal_resampled",
+                "DATA_PATH": "./Point-M2AE/data/ModelNet/modelnet40_normal_resampled",
                 "N_POINTS": 8192,
                 "NUM_CATEGORY": 40,
                 "USE_NORMALS": false,
@@ -32,7 +32,7 @@
         "val": {
             "_base_": {
                 "NAME": "ModelNet",
-                "DATA_PATH": "/export/livia/home/vision/Abahri/projects/Point-M2AE/Point-M2AE-Updated/Point-M2AE/data/ModelNet/modelnet40_normal_resampled",
+                "DATA_PATH": "./Point-M2AE/data/ModelNet/modelnet40_normal_resampled",
                 "N_POINTS": 8192,
                 "NUM_CATEGORY": 40,
                 "USE_NORMALS": false,
@@ -47,7 +47,7 @@
         "test": {
             "_base_": {
                 "NAME": "ModelNet",
-                "DATA_PATH": "/export/livia/home/vision/Abahri/projects/Point-M2AE/Point-M2AE-Updated/Point-M2AE/data/ModelNet/modelnet40_normal_resampled",
+                "DATA_PATH": "./Point-M2AE/data/ModelNet/modelnet40_normal_resampled",
                 "N_POINTS": 8192,
                 "NUM_CATEGORY": 40,
                 "USE_NORMALS": false
