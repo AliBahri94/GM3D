@@ -46,7 +46,7 @@ Pre-trained by ShapeNet, Point-MAE+SA3DF and Point-M2AE+SA3DF are evaluated by *
 
 ### Fine-tuning
 Synthetic shape classification on ModelNet40 with 1k points:
-| Models | Task  | Config | Acc.| Vote | Logs |   
+| Model | Task  | Config | Acc.| Vote | Logs |   
 | :-----: | :-----:| :-----:| :-----: | :-----:| :-----:|
 | Point-MAE+SA3F | Classification | [modelnet40.yaml](./Point-MAE_SA3D/cfgs/finetune_modelnet.yaml)|93.55%| 94.16% | [modelnet40.log](./Point-MAE_SA3D/log_files/modelnet40.log) |
 | Point-M2AE+SA3F | Classification | [modelnet40.yaml](./Point-M2AE_SA3D/cfgs/finetune_modelnet_PointM2AE.yaml)|92.90%| 93.03% | [modelnet40.log](./Point-M2AE_SA3D/log_files/modelnet40.txt) |
