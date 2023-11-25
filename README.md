@@ -38,7 +38,7 @@ We use ShapeNet, ScanObjectNN, ModelNet40 and ShapeNetPart in this work. See [Po
 
 ### Pre-training
 Pre-trained by ShapeNet, Point-M2AE is evaluated by **Linear SVM** on ModelNet40 and ScanObjectNN (OBJ-BG split) datasets, without downstream fine-tuning:
-| Models | Task | Dataset | Config | MN40 Acc.| 
+| Model | Task | Dataset | Config | MN40 Acc.| 
 | :-----: | :-----: |:-----:| :-----: | :-----: |
 | Point-MAE+SA3DF | Pre-training | ShapeNet |[point-mae+SA3DF.yaml](./Point-MAE_SA3D/config.yaml)| 92.30% |
 | Point-M2AE+SA3DF | Pre-training | ShapeNet |[point-m2ae+SA3DF.yaml](./Point-M2AE_SA3D/config_Point_M2AE.yaml)| 93.15% |
@@ -51,7 +51,7 @@ Synthetic shape classification on ModelNet40 with 1k points:
 | Point-M2AE+SA3F | Classification | [modelnet40.yaml](./Point-M2AE_SA3D/finetune_modelnet_PointM2AE.yaml)|92.90%| 93.03% | [modelnet40.log](./Point-M2AE_SA3D/log_files/modelnet40.txt) |
 
 Real-world shape classification on ScanObjectNN:
-| Models | Task | Split | Config | Acc. | Logs |   
+| Model | Task | Split | Config | Acc. | Logs |   
 | :-----: | :-----:|:-----:| :-----:| :-----:|:-----:|
 | Point-MAE+SA3DF | Classification | PB-T50-RS|[scan_pb.yaml](./Point-MAE_SA3D/config_finetune_scan_hardest.yaml) | 85.35%| [scan_pd.log](./Point-MAE_SA3D/log_files/hardest.txt) |
 | Point-MAE+SA3DF | Classification |OBJ-BG| [scan_obj-bg.yaml](./Point-MAE_SA3D/config_finetune_scan_objbg.yaml) | 90.70%| [scan_obj-pd.log](./Point-MAE_SA3D/log_files/obj_bg.txt) |
@@ -59,3 +59,9 @@ Real-world shape classification on ScanObjectNN:
 | Point-M2AE+SA3DF | Classification | PB-T50-RS|[scan_pb.yaml](./Point-M2AE_SA3D/config_finetune_scan_hardest_PointM2AE.yaml) | 86.47%| [scan_pd.log](./Point-M2AE_SA3D/log_files/hardest.txt) |
 | Point-M2AE+SA3DF | Classification |OBJ-BG| [scan_obj-bg.yaml](./Point-M2AE_SA3D/config_finetune_scan_objbg_PointM2AE.yaml) | 92.42%| [scan_obj-pd.log](./Point-M2AE_SA3D/log_files/obj_bg.txt) |
 | Point-M2AE+SA3DF | Classification | OBJ-ONLY| [scan_obj.yaml](./Point-M2AE_SA3D/config_finetune_scan_objonly_PointM2AE.yaml) | 89.50%| [scan_obj.log](./Point-M2AE_SA3D/log_files/obj_only.txt) |
+
+Part segmentation on ShapeNetPart:
+| Model | Task | Dataset | mIoUc| mIoUi | Logs |   
+| :-----: | :-----: |:-----:| :-----:| :-----: | :-----:|:-----:|
+| Point-MAE+SA3DF | Segmentation | ShapeNetPart | 84.49% | 86.04% | [seg.log](./Point-MAE_SA3D/log_files/segmentation.txt) |
+| Point-M2AE+SA3DF | Segmentation | ShapeNetPart |8 4.91% | 86.52% | - ) |
