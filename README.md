@@ -71,3 +71,25 @@ Few-shot classification on ModelNet40:
 | Model |  Task | Dataset | Config | 5w10s | 5w20s | 10w10s| 10w20s|     
 | :-----: | :-----: |:-----:| :-----: | :-----:|:-----:|:-----:| :-----:|
 | Point-MAE+SA3DF |  Few-shot Cls. | ModelNet40 |[fewshot.yaml](./Point-MAE_SA3D/fewshot.yaml) | 97.0%|98.3%|93.1%|95.2%| 
+
+
+## Get Started
+
+### Pre-training
+Point-MAEe+SA3DF and Point-M2AEe+SA3DF are pre-trained on ShapeNet dataset with the config files `./Point-MAE_SA3D/cfgs/config.yaml and ./Point-M2AE_SA3D/cfgs/config_Point_M2AE.yaml`. 
+Run for Point-MAEe+SA3DF:
+```bash
+CUDA_VISIBLE_DEVICES=<GPUs> python main_pretrain.py --config ./Point-MAE_SA3D/cfgs/config.yaml  --exp_name pre-train
+```
+Run for Point-M2AEe+SA3DF:
+```bash
+CUDA_VISIBLE_DEVICES=<GPUs> python main_pretrain.py --config ./Point-M2AE_SA3D/cfgs/config_Point_M2AE.yaml --exp_name pre-train
+```
+
+
+
+
+
+
+
+
