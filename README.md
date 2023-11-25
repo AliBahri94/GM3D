@@ -129,6 +129,11 @@ For ShapeNetPart, first into the `segmentation/` folder, and run:
 coming soon ...
 ```
 
+For Few-shot, run:
+```bash
+coming soon ...
+```
+
 
 
 
