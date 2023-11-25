@@ -165,6 +165,8 @@ def get_args_parser():
     parser.add_argument('--resume', default='', help='resume from checkpoint')
     parser.add_argument('--load_from', default='')
     parser.add_argument('--experiment', default='hpm_relative_in1k_ep200', type=str, help='experiment name (for log)')
+    parser.add_argument('--name_config', default='./finetune_modelnet.yaml',         #config_finetune_scan_hardest
+                        help='path where to save, empty for no saving')
 
     parser.add_argument('--start_epoch', default=0, type=int, metavar='N', help='start epoch')
     parser.add_argument('--num_workers', default=8, type=int)
@@ -239,11 +241,13 @@ def main(args):
     with open('./args.pkl', 'rb') as f:
         loaded_args = pickle.load(f)
 
-    with open("config.yaml", 'r') as stream:
+    """with open("config.yaml", 'r') as stream:
         try:
             loaded_config = yaml.safe_load(stream)
         except yaml.YAMLError as exc:
-            print(exc)    
+            print(exc)"""
+    with open(args.name_config, 'r') as stream:  
+        loaded_config = yaml.safe_load(stream)    
 
     with open("config_m.yaml", 'r') as stream:
         try:

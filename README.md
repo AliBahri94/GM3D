@@ -38,7 +38,7 @@ We use ShapeNet, ScanObjectNN, ModelNet40 and ShapeNetPart in this work. See [Po
 
 
 ### Pre-training
-Pre-trained by ShapeNet, Point-M2AE is evaluated by **Linear SVM** on ModelNet40 and ScanObjectNN (OBJ-BG split) datasets, without downstream fine-tuning:
+Pre-trained by ShapeNet, Point-MAE+SA3DF and Point-M2AE+SA3DF are evaluated by **Linear SVM** on ModelNet40 dataset, without downstream fine-tuning:
 | Model | Task | Dataset | Config | MN40 Acc.| 
 | :-----: | :-----: |:-----:| :-----: | :-----: |
 | Point-MAE+SA3DF | Pre-training | ShapeNet |[point-mae+SA3DF.yaml](./Point-MAE_SA3D/cfgs/config.yaml)| 92.30% |
@@ -80,11 +80,11 @@ Point-MAE+SA3DF and Point-M2AEe+SA3DF are pre-trained on ShapeNet dataset with t
 
 Run for Point-MAE+SA3DF:
 ```bash
-CUDA_VISIBLE_DEVICES=<GPUs> python main_pretrain.py --config ./Point-MAE_SA3D/cfgs/config.yaml  --exp_name pre-train
+CUDA_VISIBLE_DEVICES=<GPUs> python main_pretrain.py --config ./Point-MAE_SA3D/cfgs/config.yaml  --output_dir ./address_for_saving_output_files --log_dir ./address_for_saving_output_files 
 ```
 Run for Point-M2AE+SA3DF:
 ```bash
-CUDA_VISIBLE_DEVICES=<GPUs> python main_pretrain.py --config ./Point-M2AE_SA3D/cfgs/config_Point_M2AE.yaml --exp_name pre-train
+CUDA_VISIBLE_DEVICES=<GPUs> python main_pretrain.py --config ./Point-M2AE_SA3D/cfgs/config_Point_M2AE.yaml --output_dir ./address_for_saving_output_files --log_dir ./address_for_saving_output_files 
 ```
 
 ### Fine-tuning
@@ -92,36 +92,36 @@ Please create a folder `ckpts/` and put pretrained_model in it.
 
 For ModelNet40 (Point-MAE+SA3DF), run:
 ```bash
-CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config ./Point-MAE_SA3D/cfgs/finetune_modelnet.yaml --finetune_model --exp_name finetune --ckpts Point-MAE_SA3D/ckpts/pretrained_model.pth
+CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config ./Point-MAE_SA3D/cfgs/finetune_modelnet.yaml --output_dir ./address_for_saving_output_files --log_dir ./address_for_saving_output_files  --finetune Point-MAE_SA3D/ckpts/pretrained_model.pth
 ```
 
 For ModelNet40 (Point-M2AE+SA3DF), run:
 ```bash
-CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config ./Point-M2AE_SA3D/cfgs/finetune_modelnet_PointM2AE.yaml --finetune_model --exp_name finetune --ckpts Point-M2AE_SA3D/ckpts/pretrained_model.pth
+CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config ./Point-M2AE_SA3D/cfgs/finetune_modelnet_PointM2AE.yaml --output_dir ./address_for_saving_output_files --log_dir ./address_for_saving_output_files --finetune Point-M2AE_SA3D/ckpts/pretrained_model.pth
 ```
 
 For the three splits of ScanObjectNN (Point-MAE+SA3DF), run:
 
 ```bash
-CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config ./Point-MAE_SA3D/cfgs/config_finetune_scan_hardest.yaml --finetune_model --exp_name finetune --ckpts Point-MAE_SA3D/ckpts/pretrained_model.pth
+CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config ./Point-MAE_SA3D/cfgs/config_finetune_scan_hardest.yaml --output_dir ./address_for_saving_output_files --log_dir ./address_for_saving_output_files  --finetune Point-MAE_SA3D/ckpts/pretrained_model.pth
 ```
 ```bash
-CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config /Point-MAE_SA3D/cfgs/config_finetune_scan_objonly.yaml --finetune_model --exp_name finetune --ckpts Point-MAE_SA3D/ckpts/pretrained_model.pth
+CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config /Point-MAE_SA3D/cfgs/config_finetune_scan_objonly.yaml --output_dir ./address_for_saving_output_files --log_dir ./address_for_saving_output_files --finetune Point-MAE_SA3D/ckpts/pretrained_model.pth
 ```
 ```bash
-CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config ./Point-MAE_SA3D/cfgs/config_finetune_scan_objbg.yaml --finetune_model --exp_name finetune --ckpts Point-MAE_SA3D/ckpts/pretrained_model.pth
+CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config ./Point-MAE_SA3D/cfgs/config_finetune_scan_objbg.yaml --output_dir ./address_for_saving_output_files --log_dir ./address_for_saving_output_files --finetune Point-MAE_SA3D/ckpts/pretrained_model.pth
 ```
 
 For the three splits of ScanObjectNN (Point-M2AE+SA3DF), run:
 
 ```bash
-CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config ./Point-M2AE_SA3D/cfgs/config_finetune_scan_hardest_PointM2AE.yaml --finetune_model --exp_name finetune --ckpts Point-M2AE_SA3D/ckpts/pretrained_model.pth
+CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config ./Point-M2AE_SA3D/cfgs/config_finetune_scan_hardest_PointM2AE.yaml --output_dir ./address_for_saving_output_files --log_dir ./address_for_saving_output_files --finetune Point-M2AE_SA3D/ckpts/pretrained_model.pth
 ```
 ```bash
-CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config /Point-M2AE_SA3D/cfgs/config_finetune_scan_objonly_PointM2AE.yaml --finetune_model --exp_name finetune --ckpts Point-M2AE_SA3D/ckpts/pretrained_model.pth
+CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config /Point-M2AE_SA3D/cfgs/config_finetune_scan_objonly_PointM2AE.yaml --output_dir ./address_for_saving_output_files --log_dir ./address_for_saving_output_files --finetune Point-M2AE_SA3D/ckpts/pretrained_model.pth
 ```
 ```bash
-CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config ./Point-M2AE_SA3D/cfgs/config_finetune_scan_objbg_PointM2AE.yaml --finetune_model --exp_name finetune --ckpts Point-M2AE_SA3D/ckpts/pretrained_model.pth
+CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config ./Point-M2AE_SA3D/cfgs/config_finetune_scan_objbg_PointM2AE.yaml --output_dir ./address_for_saving_output_files --log_dir ./address_for_saving_output_files --finetune Point-M2AE_SA3D/ckpts/pretrained_model.pth
 ```
 
 For ShapeNetPart, first into the `segmentation/` folder, and run:
