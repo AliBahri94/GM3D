@@ -1,0 +1,390 @@
+2023-11-16 03:10:20,153 - finetune_modelnet - INFO - Copy the Config file from cfgs/finetune_modelnet.yaml to /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/finetune_modelnet40_new_opti_last_model_lr_5e_4_Modified_Batch_Size__93_55__/Voting/finetune_modelnet/cfgs/test_default/config.yaml
+2023-11-16 03:10:20,154 - finetune_modelnet - INFO - args.config : cfgs/finetune_modelnet.yaml
+2023-11-16 03:10:20,154 - finetune_modelnet - INFO - args.launcher : none
+2023-11-16 03:10:20,154 - finetune_modelnet - INFO - args.local_rank : 0
+2023-11-16 03:10:20,154 - finetune_modelnet - INFO - args.num_workers : 8
+2023-11-16 03:10:20,154 - finetune_modelnet - INFO - args.seed : 0
+2023-11-16 03:10:20,155 - finetune_modelnet - INFO - args.deterministic : False
+2023-11-16 03:10:20,155 - finetune_modelnet - INFO - args.sync_bn : False
+2023-11-16 03:10:20,155 - finetune_modelnet - INFO - args.exp_name : test_default
+2023-11-16 03:10:20,155 - finetune_modelnet - INFO - args.loss : cd1
+2023-11-16 03:10:20,155 - finetune_modelnet - INFO - args.start_ckpts : None
+2023-11-16 03:10:20,155 - finetune_modelnet - INFO - args.ckpts : /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/finetune_modelnet40_new_opti_last_model_lr_5e_4_Modified_Batch_Size__93_55__/vit_large_patch16_exp_temp_best.pth
+2023-11-16 03:10:20,155 - finetune_modelnet - INFO - args.val_freq : 1
+2023-11-16 03:10:20,155 - finetune_modelnet - INFO - args.vote : False
+2023-11-16 03:10:20,155 - finetune_modelnet - INFO - args.resume : False
+2023-11-16 03:10:20,156 - finetune_modelnet - INFO - args.test : True
+2023-11-16 03:10:20,156 - finetune_modelnet - INFO - args.finetune_model : False
+2023-11-16 03:10:20,156 - finetune_modelnet - INFO - args.scratch_model : False
+2023-11-16 03:10:20,156 - finetune_modelnet - INFO - args.mode : None
+2023-11-16 03:10:20,156 - finetune_modelnet - INFO - args.way : -1
+2023-11-16 03:10:20,156 - finetune_modelnet - INFO - args.shot : -1
+2023-11-16 03:10:20,156 - finetune_modelnet - INFO - args.fold : -1
+2023-11-16 03:10:20,156 - finetune_modelnet - INFO - args.experiment_path : /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/finetune_modelnet40_new_opti_last_model_lr_5e_4_Modified_Batch_Size__93_55__/Voting/finetune_modelnet/cfgs/test_default
+2023-11-16 03:10:20,156 - finetune_modelnet - INFO - args.tfboard_path : /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/finetune_modelnet40_new_opti_last_model_lr_5e_4_Modified_Batch_Size__93_55__/Voting/finetune_modelnet/cfgs/TFBoard/test_default
+2023-11-16 03:10:20,156 - finetune_modelnet - INFO - args.log_name : finetune_modelnet
+2023-11-16 03:10:20,157 - finetune_modelnet - INFO - args.use_gpu : True
+2023-11-16 03:10:20,157 - finetune_modelnet - INFO - args.distributed : False
+2023-11-16 03:10:20,157 - finetune_modelnet - INFO - config.optimizer = edict()
+2023-11-16 03:10:20,157 - finetune_modelnet - INFO - config.optimizer.type : AdamW
+2023-11-16 03:10:20,157 - finetune_modelnet - INFO - config.optimizer.kwargs = edict()
+2023-11-16 03:10:20,157 - finetune_modelnet - INFO - config.optimizer.kwargs.lr : 0.0005
+2023-11-16 03:10:20,157 - finetune_modelnet - INFO - config.optimizer.kwargs.weight_decay : 0.05
+2023-11-16 03:10:20,157 - finetune_modelnet - INFO - config.scheduler = edict()
+2023-11-16 03:10:20,157 - finetune_modelnet - INFO - config.scheduler.type : CosLR
+2023-11-16 03:10:20,158 - finetune_modelnet - INFO - config.scheduler.kwargs = edict()
+2023-11-16 03:10:20,158 - finetune_modelnet - INFO - config.scheduler.kwargs.epochs : 300
+2023-11-16 03:10:20,158 - finetune_modelnet - INFO - config.scheduler.kwargs.initial_epochs : 10
+2023-11-16 03:10:20,158 - finetune_modelnet - INFO - config.dataset = edict()
+2023-11-16 03:10:20,158 - finetune_modelnet - INFO - config.dataset.train = edict()
+2023-11-16 03:10:20,158 - finetune_modelnet - INFO - config.dataset.train._base_ = edict()
+2023-11-16 03:10:20,158 - finetune_modelnet - INFO - config.dataset.train._base_.NAME : ModelNet
+2023-11-16 03:10:20,158 - finetune_modelnet - INFO - config.dataset.train._base_.DATA_PATH : /export/livia/home/vision/Abahri/projects/Point-MAE/Point-MAE-org/Point-MAE/data/ModelNet/modelnet40_normal_resampled
+2023-11-16 03:10:20,158 - finetune_modelnet - INFO - config.dataset.train._base_.N_POINTS : 8192
+2023-11-16 03:10:20,158 - finetune_modelnet - INFO - config.dataset.train._base_.NUM_CATEGORY : 40
+2023-11-16 03:10:20,159 - finetune_modelnet - INFO - config.dataset.train._base_.USE_NORMALS : False
+2023-11-16 03:10:20,159 - finetune_modelnet - INFO - config.dataset.train.others = edict()
+2023-11-16 03:10:20,159 - finetune_modelnet - INFO - config.dataset.train.others.subset : train
+2023-11-16 03:10:20,159 - finetune_modelnet - INFO - config.dataset.train.others.bs : 32
+2023-11-16 03:10:20,159 - finetune_modelnet - INFO - config.dataset.val = edict()
+2023-11-16 03:10:20,159 - finetune_modelnet - INFO - config.dataset.val._base_ = edict()
+2023-11-16 03:10:20,159 - finetune_modelnet - INFO - config.dataset.val._base_.NAME : ModelNet
+2023-11-16 03:10:20,159 - finetune_modelnet - INFO - config.dataset.val._base_.DATA_PATH : /export/livia/home/vision/Abahri/projects/Point-MAE/Point-MAE-org/Point-MAE/data/ModelNet/modelnet40_normal_resampled
+2023-11-16 03:10:20,159 - finetune_modelnet - INFO - config.dataset.val._base_.N_POINTS : 8192
+2023-11-16 03:10:20,159 - finetune_modelnet - INFO - config.dataset.val._base_.NUM_CATEGORY : 40
+2023-11-16 03:10:20,160 - finetune_modelnet - INFO - config.dataset.val._base_.USE_NORMALS : False
+2023-11-16 03:10:20,160 - finetune_modelnet - INFO - config.dataset.val.others = edict()
+2023-11-16 03:10:20,160 - finetune_modelnet - INFO - config.dataset.val.others.subset : test
+2023-11-16 03:10:20,160 - finetune_modelnet - INFO - config.dataset.val.others.bs : 64
+2023-11-16 03:10:20,160 - finetune_modelnet - INFO - config.dataset.test = edict()
+2023-11-16 03:10:20,160 - finetune_modelnet - INFO - config.dataset.test._base_ = edict()
+2023-11-16 03:10:20,160 - finetune_modelnet - INFO - config.dataset.test._base_.NAME : ModelNet
+2023-11-16 03:10:20,160 - finetune_modelnet - INFO - config.dataset.test._base_.DATA_PATH : /export/livia/home/vision/Abahri/projects/Point-MAE/Point-MAE-org/Point-MAE/data/ModelNet/modelnet40_normal_resampled
+2023-11-16 03:10:20,160 - finetune_modelnet - INFO - config.dataset.test._base_.N_POINTS : 8192
+2023-11-16 03:10:20,160 - finetune_modelnet - INFO - config.dataset.test._base_.NUM_CATEGORY : 40
+2023-11-16 03:10:20,161 - finetune_modelnet - INFO - config.dataset.test._base_.USE_NORMALS : False
+2023-11-16 03:10:20,161 - finetune_modelnet - INFO - config.dataset.test.others = edict()
+2023-11-16 03:10:20,161 - finetune_modelnet - INFO - config.dataset.test.others.subset : test
+2023-11-16 03:10:20,161 - finetune_modelnet - INFO - config.dataset.test.others.bs : 32
+2023-11-16 03:10:20,161 - finetune_modelnet - INFO - config.model = edict()
+2023-11-16 03:10:20,161 - finetune_modelnet - INFO - config.model.NAME : PointTransformer
+2023-11-16 03:10:20,161 - finetune_modelnet - INFO - config.model.trans_dim : 384
+2023-11-16 03:10:20,161 - finetune_modelnet - INFO - config.model.depth : 12
+2023-11-16 03:10:20,161 - finetune_modelnet - INFO - config.model.drop_path_rate : 0.1
+2023-11-16 03:10:20,161 - finetune_modelnet - INFO - config.model.cls_dim : 40
+2023-11-16 03:10:20,162 - finetune_modelnet - INFO - config.model.num_heads : 6
+2023-11-16 03:10:20,162 - finetune_modelnet - INFO - config.model.group_size : 32
+2023-11-16 03:10:20,162 - finetune_modelnet - INFO - config.model.num_group : 64
+2023-11-16 03:10:20,162 - finetune_modelnet - INFO - config.model.encoder_dims : 384
+2023-11-16 03:10:20,162 - finetune_modelnet - INFO - config.npoints : 1024
+2023-11-16 03:10:20,162 - finetune_modelnet - INFO - config.total_bs : 32
+2023-11-16 03:10:20,162 - finetune_modelnet - INFO - config.step_per_update : 1
+2023-11-16 03:10:20,162 - finetune_modelnet - INFO - config.max_epoch : 300
+2023-11-16 03:10:20,162 - finetune_modelnet - INFO - config.grad_norm_clip : 10
+2023-11-16 03:10:20,162 - finetune_modelnet - INFO - Distributed training: False
+2023-11-16 03:10:20,163 - finetune_modelnet - INFO - Set random seed to 0, deterministic: False
+2023-11-16 03:10:20,164 - finetune_modelnet - INFO - Tester start ... 
+2023-11-16 03:10:24,798 - finetune_modelnet - INFO - Loading weights from /export/livia/home/vision/Abahri/projects/Hard_Patches_Point_Cloud/HPM/new_experiments_Feature_Based/2_PMAE_Chamfer_MSE_Feauture_based_lr_for_Hard_Patches_keep_ratio_0_5_G_64_N_32_Mask_ratio_6_2_decoders_chamfer_multiply_1000_seperate_learnable_tokens_shared_optimizer_for_loss_prediction_and_reconstruction_MODIFIED_2/finetune_modelnet40_new_opti_last_model_lr_5e_4_Modified_Batch_Size__93_55__/vit_large_patch16_exp_temp_best.pth...
+2023-11-16 03:10:28,555 - finetune_modelnet - INFO - ckpts @ 48 epoch( performance = No Metrics)
+2023-11-16 03:10:40,805 - finetune_modelnet - INFO - [TEST] acc = 93.5575
+2023-11-16 03:10:40,806 - finetune_modelnet - INFO - [TEST_VOTE]
+2023-11-16 03:11:54,567 - finetune_modelnet - INFO - [TEST_VOTE_time 1]  acc = 93.8817, best acc = 93.8817
+2023-11-16 03:13:08,986 - finetune_modelnet - INFO - [TEST_VOTE_time 2]  acc = 93.8817, best acc = 93.8817
+2023-11-16 03:14:23,289 - finetune_modelnet - INFO - [TEST_VOTE_time 3]  acc = 93.7601, best acc = 93.8817
+2023-11-16 03:15:37,705 - finetune_modelnet - INFO - [TEST_VOTE_time 4]  acc = 93.7601, best acc = 93.8817
+2023-11-16 03:16:52,059 - finetune_modelnet - INFO - [TEST_VOTE_time 5]  acc = 93.6791, best acc = 93.8817
+2023-11-16 03:18:06,449 - finetune_modelnet - INFO - [TEST_VOTE_time 6]  acc = 93.8817, best acc = 93.8817
+2023-11-16 03:19:20,754 - finetune_modelnet - INFO - [TEST_VOTE_time 7]  acc = 93.8006, best acc = 93.8817
+2023-11-16 03:20:35,104 - finetune_modelnet - INFO - [TEST_VOTE_time 8]  acc = 93.5170, best acc = 93.8817
+2023-11-16 03:21:49,398 - finetune_modelnet - INFO - [TEST_VOTE_time 9]  acc = 94.0032, best acc = 94.0032
+2023-11-16 03:23:03,689 - finetune_modelnet - INFO - [TEST_VOTE_time 10]  acc = 93.8412, best acc = 94.0032
+2023-11-16 03:24:18,037 - finetune_modelnet - INFO - [TEST_VOTE_time 11]  acc = 93.8006, best acc = 94.0032
+2023-11-16 03:25:32,343 - finetune_modelnet - INFO - [TEST_VOTE_time 12]  acc = 93.7601, best acc = 94.0032
+2023-11-16 03:26:46,800 - finetune_modelnet - INFO - [TEST_VOTE_time 13]  acc = 93.7601, best acc = 94.0032
+2023-11-16 03:28:01,201 - finetune_modelnet - INFO - [TEST_VOTE_time 14]  acc = 93.8412, best acc = 94.0032
+2023-11-16 03:29:15,684 - finetune_modelnet - INFO - [TEST_VOTE_time 15]  acc = 93.8006, best acc = 94.0032
+2023-11-16 03:30:30,114 - finetune_modelnet - INFO - [TEST_VOTE_time 16]  acc = 93.9627, best acc = 94.0032
+2023-11-16 03:31:44,418 - finetune_modelnet - INFO - [TEST_VOTE_time 17]  acc = 93.8817, best acc = 94.0032
+2023-11-16 03:32:58,738 - finetune_modelnet - INFO - [TEST_VOTE_time 18]  acc = 93.8817, best acc = 94.0032
+2023-11-16 03:34:13,132 - finetune_modelnet - INFO - [TEST_VOTE_time 19]  acc = 94.0032, best acc = 94.0032
+2023-11-16 03:35:27,502 - finetune_modelnet - INFO - [TEST_VOTE_time 20]  acc = 93.8006, best acc = 94.0032
+2023-11-16 03:36:41,949 - finetune_modelnet - INFO - [TEST_VOTE_time 21]  acc = 93.7601, best acc = 94.0032
+2023-11-16 03:37:56,357 - finetune_modelnet - INFO - [TEST_VOTE_time 22]  acc = 93.6791, best acc = 94.0032
+2023-11-16 03:39:10,764 - finetune_modelnet - INFO - [TEST_VOTE_time 23]  acc = 94.1248, best acc = 94.1248
+2023-11-16 03:40:25,090 - finetune_modelnet - INFO - [TEST_VOTE_time 24]  acc = 93.5981, best acc = 94.1248
+2023-11-16 03:41:39,378 - finetune_modelnet - INFO - [TEST_VOTE_time 25]  acc = 93.6791, best acc = 94.1248
+2023-11-16 03:42:53,739 - finetune_modelnet - INFO - [TEST_VOTE_time 26]  acc = 93.9627, best acc = 94.1248
+2023-11-16 03:44:08,044 - finetune_modelnet - INFO - [TEST_VOTE_time 27]  acc = 93.8817, best acc = 94.1248
+2023-11-16 03:45:22,333 - finetune_modelnet - INFO - [TEST_VOTE_time 28]  acc = 93.8006, best acc = 94.1248
+2023-11-16 03:46:36,691 - finetune_modelnet - INFO - [TEST_VOTE_time 29]  acc = 93.7196, best acc = 94.1248
+2023-11-16 03:47:51,145 - finetune_modelnet - INFO - [TEST_VOTE_time 30]  acc = 93.7601, best acc = 94.1248
+2023-11-16 03:49:05,448 - finetune_modelnet - INFO - [TEST_VOTE_time 31]  acc = 93.6791, best acc = 94.1248
+2023-11-16 03:50:19,716 - finetune_modelnet - INFO - [TEST_VOTE_time 32]  acc = 93.8817, best acc = 94.1248
+2023-11-16 03:51:34,182 - finetune_modelnet - INFO - [TEST_VOTE_time 33]  acc = 93.8006, best acc = 94.1248
+2023-11-16 03:52:48,457 - finetune_modelnet - INFO - [TEST_VOTE_time 34]  acc = 93.8006, best acc = 94.1248
+2023-11-16 03:54:02,764 - finetune_modelnet - INFO - [TEST_VOTE_time 35]  acc = 93.5981, best acc = 94.1248
+2023-11-16 03:55:17,071 - finetune_modelnet - INFO - [TEST_VOTE_time 36]  acc = 93.9222, best acc = 94.1248
+2023-11-16 03:56:31,412 - finetune_modelnet - INFO - [TEST_VOTE_time 37]  acc = 94.0032, best acc = 94.1248
+2023-11-16 03:57:45,783 - finetune_modelnet - INFO - [TEST_VOTE_time 38]  acc = 93.7601, best acc = 94.1248
+2023-11-16 03:59:00,207 - finetune_modelnet - INFO - [TEST_VOTE_time 39]  acc = 93.5981, best acc = 94.1248
+2023-11-16 04:00:14,590 - finetune_modelnet - INFO - [TEST_VOTE_time 40]  acc = 93.7196, best acc = 94.1248
+2023-11-16 04:01:28,972 - finetune_modelnet - INFO - [TEST_VOTE_time 41]  acc = 94.0032, best acc = 94.1248
+2023-11-16 04:02:43,385 - finetune_modelnet - INFO - [TEST_VOTE_time 42]  acc = 93.6791, best acc = 94.1248
+2023-11-16 04:03:57,766 - finetune_modelnet - INFO - [TEST_VOTE_time 43]  acc = 93.8412, best acc = 94.1248
+2023-11-16 04:05:12,217 - finetune_modelnet - INFO - [TEST_VOTE_time 44]  acc = 93.7196, best acc = 94.1248
+2023-11-16 04:06:26,553 - finetune_modelnet - INFO - [TEST_VOTE_time 45]  acc = 93.7196, best acc = 94.1248
+2023-11-16 04:07:40,965 - finetune_modelnet - INFO - [TEST_VOTE_time 46]  acc = 93.9627, best acc = 94.1248
+2023-11-16 04:08:55,344 - finetune_modelnet - INFO - [TEST_VOTE_time 47]  acc = 93.7601, best acc = 94.1248
+2023-11-16 04:10:09,800 - finetune_modelnet - INFO - [TEST_VOTE_time 48]  acc = 93.8412, best acc = 94.1248
+2023-11-16 04:11:24,210 - finetune_modelnet - INFO - [TEST_VOTE_time 49]  acc = 93.8006, best acc = 94.1248
+2023-11-16 04:12:38,542 - finetune_modelnet - INFO - [TEST_VOTE_time 50]  acc = 93.8006, best acc = 94.1248
+2023-11-16 04:13:52,816 - finetune_modelnet - INFO - [TEST_VOTE_time 51]  acc = 93.7601, best acc = 94.1248
+2023-11-16 04:15:07,141 - finetune_modelnet - INFO - [TEST_VOTE_time 52]  acc = 93.8817, best acc = 94.1248
+2023-11-16 04:16:21,452 - finetune_modelnet - INFO - [TEST_VOTE_time 53]  acc = 94.0843, best acc = 94.1248
+2023-11-16 04:17:35,813 - finetune_modelnet - INFO - [TEST_VOTE_time 54]  acc = 93.8006, best acc = 94.1248
+2023-11-16 04:18:50,272 - finetune_modelnet - INFO - [TEST_VOTE_time 55]  acc = 93.8006, best acc = 94.1248
+2023-11-16 04:20:04,617 - finetune_modelnet - INFO - [TEST_VOTE_time 56]  acc = 93.9627, best acc = 94.1248
+2023-11-16 04:21:18,926 - finetune_modelnet - INFO - [TEST_VOTE_time 57]  acc = 94.0843, best acc = 94.1248
+2023-11-16 04:22:33,461 - finetune_modelnet - INFO - [TEST_VOTE_time 58]  acc = 93.8412, best acc = 94.1248
+2023-11-16 04:23:47,749 - finetune_modelnet - INFO - [TEST_VOTE_time 59]  acc = 93.6791, best acc = 94.1248
+2023-11-16 04:25:02,158 - finetune_modelnet - INFO - [TEST_VOTE_time 60]  acc = 93.7601, best acc = 94.1248
+2023-11-16 04:26:16,599 - finetune_modelnet - INFO - [TEST_VOTE_time 61]  acc = 93.6791, best acc = 94.1248
+2023-11-16 04:27:31,001 - finetune_modelnet - INFO - [TEST_VOTE_time 62]  acc = 93.8006, best acc = 94.1248
+2023-11-16 04:28:45,486 - finetune_modelnet - INFO - [TEST_VOTE_time 63]  acc = 93.9222, best acc = 94.1248
+2023-11-16 04:29:59,836 - finetune_modelnet - INFO - [TEST_VOTE_time 64]  acc = 93.6386, best acc = 94.1248
+2023-11-16 04:31:14,196 - finetune_modelnet - INFO - [TEST_VOTE_time 65]  acc = 94.0032, best acc = 94.1248
+2023-11-16 04:32:28,513 - finetune_modelnet - INFO - [TEST_VOTE_time 66]  acc = 94.0032, best acc = 94.1248
+2023-11-16 04:33:42,875 - finetune_modelnet - INFO - [TEST_VOTE_time 67]  acc = 93.8817, best acc = 94.1248
+2023-11-16 04:34:57,216 - finetune_modelnet - INFO - [TEST_VOTE_time 68]  acc = 93.4360, best acc = 94.1248
+2023-11-16 04:36:11,535 - finetune_modelnet - INFO - [TEST_VOTE_time 69]  acc = 93.7601, best acc = 94.1248
+2023-11-16 04:37:25,884 - finetune_modelnet - INFO - [TEST_VOTE_time 70]  acc = 93.8412, best acc = 94.1248
+2023-11-16 04:38:40,194 - finetune_modelnet - INFO - [TEST_VOTE_time 71]  acc = 93.5981, best acc = 94.1248
+2023-11-16 04:39:54,492 - finetune_modelnet - INFO - [TEST_VOTE_time 72]  acc = 93.8006, best acc = 94.1248
+2023-11-16 04:41:08,937 - finetune_modelnet - INFO - [TEST_VOTE_time 73]  acc = 93.8412, best acc = 94.1248
+2023-11-16 04:42:23,247 - finetune_modelnet - INFO - [TEST_VOTE_time 74]  acc = 93.9222, best acc = 94.1248
+2023-11-16 04:43:37,532 - finetune_modelnet - INFO - [TEST_VOTE_time 75]  acc = 93.8006, best acc = 94.1248
+2023-11-16 04:44:51,972 - finetune_modelnet - INFO - [TEST_VOTE_time 76]  acc = 93.6386, best acc = 94.1248
+2023-11-16 04:46:06,427 - finetune_modelnet - INFO - [TEST_VOTE_time 77]  acc = 94.0438, best acc = 94.1248
+2023-11-16 04:47:20,916 - finetune_modelnet - INFO - [TEST_VOTE_time 78]  acc = 93.8817, best acc = 94.1248
+2023-11-16 04:48:35,359 - finetune_modelnet - INFO - [TEST_VOTE_time 79]  acc = 93.9627, best acc = 94.1248
+2023-11-16 04:49:49,843 - finetune_modelnet - INFO - [TEST_VOTE_time 80]  acc = 93.9627, best acc = 94.1248
+2023-11-16 04:51:04,304 - finetune_modelnet - INFO - [TEST_VOTE_time 81]  acc = 94.0438, best acc = 94.1248
+2023-11-16 04:52:18,809 - finetune_modelnet - INFO - [TEST_VOTE_time 82]  acc = 93.8817, best acc = 94.1248
+2023-11-16 04:53:33,131 - finetune_modelnet - INFO - [TEST_VOTE_time 83]  acc = 93.7196, best acc = 94.1248
+2023-11-16 04:54:47,484 - finetune_modelnet - INFO - [TEST_VOTE_time 84]  acc = 93.9627, best acc = 94.1248
+2023-11-16 04:56:01,799 - finetune_modelnet - INFO - [TEST_VOTE_time 85]  acc = 93.8412, best acc = 94.1248
+2023-11-16 04:57:16,083 - finetune_modelnet - INFO - [TEST_VOTE_time 86]  acc = 93.8412, best acc = 94.1248
+2023-11-16 04:58:30,434 - finetune_modelnet - INFO - [TEST_VOTE_time 87]  acc = 94.0032, best acc = 94.1248
+2023-11-16 04:59:44,683 - finetune_modelnet - INFO - [TEST_VOTE_time 88]  acc = 93.8412, best acc = 94.1248
+2023-11-16 05:00:59,007 - finetune_modelnet - INFO - [TEST_VOTE_time 89]  acc = 93.7196, best acc = 94.1248
+2023-11-16 05:02:13,346 - finetune_modelnet - INFO - [TEST_VOTE_time 90]  acc = 93.6386, best acc = 94.1248
+2023-11-16 05:03:27,729 - finetune_modelnet - INFO - [TEST_VOTE_time 91]  acc = 93.8817, best acc = 94.1248
+2023-11-16 05:04:42,161 - finetune_modelnet - INFO - [TEST_VOTE_time 92]  acc = 93.7601, best acc = 94.1248
+2023-11-16 05:05:56,495 - finetune_modelnet - INFO - [TEST_VOTE_time 93]  acc = 93.8006, best acc = 94.1248
+2023-11-16 05:07:10,769 - finetune_modelnet - INFO - [TEST_VOTE_time 94]  acc = 93.8412, best acc = 94.1248
+2023-11-16 05:08:25,238 - finetune_modelnet - INFO - [TEST_VOTE_time 95]  acc = 93.8412, best acc = 94.1248
+2023-11-16 05:09:39,575 - finetune_modelnet - INFO - [TEST_VOTE_time 96]  acc = 93.7601, best acc = 94.1248
+2023-11-16 05:10:54,008 - finetune_modelnet - INFO - [TEST_VOTE_time 97]  acc = 93.8817, best acc = 94.1248
+2023-11-16 05:12:08,329 - finetune_modelnet - INFO - [TEST_VOTE_time 98]  acc = 93.9222, best acc = 94.1248
+2023-11-16 05:13:22,839 - finetune_modelnet - INFO - [TEST_VOTE_time 99]  acc = 93.8412, best acc = 94.1248
+2023-11-16 05:14:37,172 - finetune_modelnet - INFO - [TEST_VOTE_time 100]  acc = 94.0843, best acc = 94.1248
+2023-11-16 05:15:51,548 - finetune_modelnet - INFO - [TEST_VOTE_time 101]  acc = 93.9222, best acc = 94.1248
+2023-11-16 05:17:05,857 - finetune_modelnet - INFO - [TEST_VOTE_time 102]  acc = 93.8817, best acc = 94.1248
+2023-11-16 05:18:20,215 - finetune_modelnet - INFO - [TEST_VOTE_time 103]  acc = 93.8412, best acc = 94.1248
+2023-11-16 05:19:34,566 - finetune_modelnet - INFO - [TEST_VOTE_time 104]  acc = 93.8817, best acc = 94.1248
+2023-11-16 05:20:48,949 - finetune_modelnet - INFO - [TEST_VOTE_time 105]  acc = 94.0032, best acc = 94.1248
+2023-11-16 05:22:03,326 - finetune_modelnet - INFO - [TEST_VOTE_time 106]  acc = 93.9627, best acc = 94.1248
+2023-11-16 05:23:17,610 - finetune_modelnet - INFO - [TEST_VOTE_time 107]  acc = 93.7601, best acc = 94.1248
+2023-11-16 05:24:31,845 - finetune_modelnet - INFO - [TEST_VOTE_time 108]  acc = 93.7601, best acc = 94.1248
+2023-11-16 05:25:46,200 - finetune_modelnet - INFO - [TEST_VOTE_time 109]  acc = 93.8412, best acc = 94.1248
+2023-11-16 05:27:00,606 - finetune_modelnet - INFO - [TEST_VOTE_time 110]  acc = 93.6791, best acc = 94.1248
+2023-11-16 05:28:14,953 - finetune_modelnet - INFO - [TEST_VOTE_time 111]  acc = 93.7196, best acc = 94.1248
+2023-11-16 05:29:29,218 - finetune_modelnet - INFO - [TEST_VOTE_time 112]  acc = 93.7601, best acc = 94.1248
+2023-11-16 05:30:43,546 - finetune_modelnet - INFO - [TEST_VOTE_time 113]  acc = 93.7196, best acc = 94.1248
+2023-11-16 05:31:57,996 - finetune_modelnet - INFO - [TEST_VOTE_time 114]  acc = 93.7601, best acc = 94.1248
+2023-11-16 05:33:12,404 - finetune_modelnet - INFO - [TEST_VOTE_time 115]  acc = 93.8006, best acc = 94.1248
+2023-11-16 05:34:26,842 - finetune_modelnet - INFO - [TEST_VOTE_time 116]  acc = 93.8412, best acc = 94.1248
+2023-11-16 05:35:41,176 - finetune_modelnet - INFO - [TEST_VOTE_time 117]  acc = 93.9222, best acc = 94.1248
+2023-11-16 05:36:55,471 - finetune_modelnet - INFO - [TEST_VOTE_time 118]  acc = 93.8006, best acc = 94.1248
+2023-11-16 05:38:09,832 - finetune_modelnet - INFO - [TEST_VOTE_time 119]  acc = 93.8006, best acc = 94.1248
+2023-11-16 05:39:24,120 - finetune_modelnet - INFO - [TEST_VOTE_time 120]  acc = 93.8412, best acc = 94.1248
+2023-11-16 05:40:38,539 - finetune_modelnet - INFO - [TEST_VOTE_time 121]  acc = 94.0843, best acc = 94.1248
+2023-11-16 05:41:52,828 - finetune_modelnet - INFO - [TEST_VOTE_time 122]  acc = 93.8412, best acc = 94.1248
+2023-11-16 05:43:07,373 - finetune_modelnet - INFO - [TEST_VOTE_time 123]  acc = 93.7601, best acc = 94.1248
+2023-11-16 05:44:21,692 - finetune_modelnet - INFO - [TEST_VOTE_time 124]  acc = 93.8412, best acc = 94.1248
+2023-11-16 05:45:36,060 - finetune_modelnet - INFO - [TEST_VOTE_time 125]  acc = 94.0438, best acc = 94.1248
+2023-11-16 05:46:50,386 - finetune_modelnet - INFO - [TEST_VOTE_time 126]  acc = 93.9222, best acc = 94.1248
+2023-11-16 05:48:04,759 - finetune_modelnet - INFO - [TEST_VOTE_time 127]  acc = 93.8412, best acc = 94.1248
+2023-11-16 05:49:19,098 - finetune_modelnet - INFO - [TEST_VOTE_time 128]  acc = 93.9222, best acc = 94.1248
+2023-11-16 05:50:33,427 - finetune_modelnet - INFO - [TEST_VOTE_time 129]  acc = 93.8817, best acc = 94.1248
+2023-11-16 05:51:47,835 - finetune_modelnet - INFO - [TEST_VOTE_time 130]  acc = 93.8006, best acc = 94.1248
+2023-11-16 05:53:02,134 - finetune_modelnet - INFO - [TEST_VOTE_time 131]  acc = 93.8817, best acc = 94.1248
+2023-11-16 05:54:16,477 - finetune_modelnet - INFO - [TEST_VOTE_time 132]  acc = 93.7601, best acc = 94.1248
+2023-11-16 05:55:30,759 - finetune_modelnet - INFO - [TEST_VOTE_time 133]  acc = 93.8817, best acc = 94.1248
+2023-11-16 05:56:45,062 - finetune_modelnet - INFO - [TEST_VOTE_time 134]  acc = 93.9222, best acc = 94.1248
+2023-11-16 05:57:59,350 - finetune_modelnet - INFO - [TEST_VOTE_time 135]  acc = 93.8412, best acc = 94.1248
+2023-11-16 05:59:13,734 - finetune_modelnet - INFO - [TEST_VOTE_time 136]  acc = 93.9222, best acc = 94.1248
+2023-11-16 06:00:28,102 - finetune_modelnet - INFO - [TEST_VOTE_time 137]  acc = 93.8817, best acc = 94.1248
+2023-11-16 06:01:42,508 - finetune_modelnet - INFO - [TEST_VOTE_time 138]  acc = 93.8006, best acc = 94.1248
+2023-11-16 06:02:56,900 - finetune_modelnet - INFO - [TEST_VOTE_time 139]  acc = 93.6386, best acc = 94.1248
+2023-11-16 06:04:11,314 - finetune_modelnet - INFO - [TEST_VOTE_time 140]  acc = 93.8412, best acc = 94.1248
+2023-11-16 06:05:25,099 - finetune_modelnet - INFO - [TEST_VOTE_time 141]  acc = 94.0032, best acc = 94.1248
+2023-11-16 06:06:38,825 - finetune_modelnet - INFO - [TEST_VOTE_time 142]  acc = 93.9222, best acc = 94.1248
+2023-11-16 06:07:52,649 - finetune_modelnet - INFO - [TEST_VOTE_time 143]  acc = 93.8817, best acc = 94.1248
+2023-11-16 06:09:06,502 - finetune_modelnet - INFO - [TEST_VOTE_time 144]  acc = 93.6791, best acc = 94.1248
+2023-11-16 06:10:20,302 - finetune_modelnet - INFO - [TEST_VOTE_time 145]  acc = 93.8006, best acc = 94.1248
+2023-11-16 06:11:34,013 - finetune_modelnet - INFO - [TEST_VOTE_time 146]  acc = 93.7601, best acc = 94.1248
+2023-11-16 06:12:47,824 - finetune_modelnet - INFO - [TEST_VOTE_time 147]  acc = 94.0438, best acc = 94.1248
+2023-11-16 06:14:01,667 - finetune_modelnet - INFO - [TEST_VOTE_time 148]  acc = 93.8006, best acc = 94.1248
+2023-11-16 06:15:15,410 - finetune_modelnet - INFO - [TEST_VOTE_time 149]  acc = 93.7601, best acc = 94.1248
+2023-11-16 06:16:29,124 - finetune_modelnet - INFO - [TEST_VOTE_time 150]  acc = 93.7601, best acc = 94.1248
+2023-11-16 06:17:42,865 - finetune_modelnet - INFO - [TEST_VOTE_time 151]  acc = 94.0843, best acc = 94.1248
+2023-11-16 06:18:56,610 - finetune_modelnet - INFO - [TEST_VOTE_time 152]  acc = 93.6791, best acc = 94.1248
+2023-11-16 06:20:10,382 - finetune_modelnet - INFO - [TEST_VOTE_time 153]  acc = 93.8817, best acc = 94.1248
+2023-11-16 06:21:24,180 - finetune_modelnet - INFO - [TEST_VOTE_time 154]  acc = 93.9222, best acc = 94.1248
+2023-11-16 06:22:38,076 - finetune_modelnet - INFO - [TEST_VOTE_time 155]  acc = 93.6386, best acc = 94.1248
+2023-11-16 06:23:51,817 - finetune_modelnet - INFO - [TEST_VOTE_time 156]  acc = 93.8817, best acc = 94.1248
+2023-11-16 06:25:05,587 - finetune_modelnet - INFO - [TEST_VOTE_time 157]  acc = 93.8412, best acc = 94.1248
+2023-11-16 06:26:19,315 - finetune_modelnet - INFO - [TEST_VOTE_time 158]  acc = 93.7196, best acc = 94.1248
+2023-11-16 06:27:33,100 - finetune_modelnet - INFO - [TEST_VOTE_time 159]  acc = 94.1248, best acc = 94.1248
+2023-11-16 06:28:46,973 - finetune_modelnet - INFO - [TEST_VOTE_time 160]  acc = 93.8006, best acc = 94.1248
+2023-11-16 06:30:00,790 - finetune_modelnet - INFO - [TEST_VOTE_time 161]  acc = 94.0032, best acc = 94.1248
+2023-11-16 06:31:14,562 - finetune_modelnet - INFO - [TEST_VOTE_time 162]  acc = 93.8412, best acc = 94.1248
+2023-11-16 06:32:28,244 - finetune_modelnet - INFO - [TEST_VOTE_time 163]  acc = 93.9222, best acc = 94.1248
+2023-11-16 06:33:41,952 - finetune_modelnet - INFO - [TEST_VOTE_time 164]  acc = 93.8006, best acc = 94.1248
+2023-11-16 06:34:55,673 - finetune_modelnet - INFO - [TEST_VOTE_time 165]  acc = 93.6386, best acc = 94.1248
+2023-11-16 06:36:09,405 - finetune_modelnet - INFO - [TEST_VOTE_time 166]  acc = 93.9627, best acc = 94.1248
+2023-11-16 06:37:23,264 - finetune_modelnet - INFO - [TEST_VOTE_time 167]  acc = 93.6386, best acc = 94.1248
+2023-11-16 06:38:36,969 - finetune_modelnet - INFO - [TEST_VOTE_time 168]  acc = 93.8412, best acc = 94.1248
+2023-11-16 06:39:50,681 - finetune_modelnet - INFO - [TEST_VOTE_time 169]  acc = 93.7601, best acc = 94.1248
+2023-11-16 06:41:04,401 - finetune_modelnet - INFO - [TEST_VOTE_time 170]  acc = 93.9627, best acc = 94.1248
+2023-11-16 06:42:18,035 - finetune_modelnet - INFO - [TEST_VOTE_time 171]  acc = 93.7601, best acc = 94.1248
+2023-11-16 06:43:31,939 - finetune_modelnet - INFO - [TEST_VOTE_time 172]  acc = 93.8412, best acc = 94.1248
+2023-11-16 06:44:45,673 - finetune_modelnet - INFO - [TEST_VOTE_time 173]  acc = 93.7196, best acc = 94.1248
+2023-11-16 06:45:59,449 - finetune_modelnet - INFO - [TEST_VOTE_time 174]  acc = 93.8817, best acc = 94.1248
+2023-11-16 06:47:13,155 - finetune_modelnet - INFO - [TEST_VOTE_time 175]  acc = 93.8412, best acc = 94.1248
+2023-11-16 06:48:26,935 - finetune_modelnet - INFO - [TEST_VOTE_time 176]  acc = 93.9222, best acc = 94.1248
+2023-11-16 06:49:40,704 - finetune_modelnet - INFO - [TEST_VOTE_time 177]  acc = 93.7601, best acc = 94.1248
+2023-11-16 06:50:54,399 - finetune_modelnet - INFO - [TEST_VOTE_time 178]  acc = 93.9222, best acc = 94.1248
+2023-11-16 06:52:08,088 - finetune_modelnet - INFO - [TEST_VOTE_time 179]  acc = 93.8412, best acc = 94.1248
+2023-11-16 06:53:21,970 - finetune_modelnet - INFO - [TEST_VOTE_time 180]  acc = 93.7601, best acc = 94.1248
+2023-11-16 06:54:35,735 - finetune_modelnet - INFO - [TEST_VOTE_time 181]  acc = 93.8412, best acc = 94.1248
+2023-11-16 06:55:49,584 - finetune_modelnet - INFO - [TEST_VOTE_time 182]  acc = 93.8006, best acc = 94.1248
+2023-11-16 06:57:03,377 - finetune_modelnet - INFO - [TEST_VOTE_time 183]  acc = 93.8006, best acc = 94.1248
+2023-11-16 06:58:17,042 - finetune_modelnet - INFO - [TEST_VOTE_time 184]  acc = 93.7601, best acc = 94.1248
+2023-11-16 06:59:30,931 - finetune_modelnet - INFO - [TEST_VOTE_time 185]  acc = 93.7196, best acc = 94.1248
+2023-11-16 07:00:44,771 - finetune_modelnet - INFO - [TEST_VOTE_time 186]  acc = 94.1653, best acc = 94.1653
+2023-11-16 07:01:58,590 - finetune_modelnet - INFO - [TEST_VOTE_time 187]  acc = 93.8006, best acc = 94.1653
+2023-11-16 07:03:12,307 - finetune_modelnet - INFO - [TEST_VOTE_time 188]  acc = 93.9627, best acc = 94.1653
+2023-11-16 07:04:26,009 - finetune_modelnet - INFO - [TEST_VOTE_time 189]  acc = 93.9222, best acc = 94.1653
+2023-11-16 07:05:39,767 - finetune_modelnet - INFO - [TEST_VOTE_time 190]  acc = 93.9627, best acc = 94.1653
+2023-11-16 07:06:53,467 - finetune_modelnet - INFO - [TEST_VOTE_time 191]  acc = 93.8006, best acc = 94.1653
+2023-11-16 07:08:07,326 - finetune_modelnet - INFO - [TEST_VOTE_time 192]  acc = 93.9222, best acc = 94.1653
+2023-11-16 07:09:21,052 - finetune_modelnet - INFO - [TEST_VOTE_time 193]  acc = 93.9222, best acc = 94.1653
+2023-11-16 07:10:34,940 - finetune_modelnet - INFO - [TEST_VOTE_time 194]  acc = 93.8006, best acc = 94.1653
+2023-11-16 07:11:48,636 - finetune_modelnet - INFO - [TEST_VOTE_time 195]  acc = 94.0032, best acc = 94.1653
+2023-11-16 07:13:02,291 - finetune_modelnet - INFO - [TEST_VOTE_time 196]  acc = 94.0032, best acc = 94.1653
+2023-11-16 07:14:16,044 - finetune_modelnet - INFO - [TEST_VOTE_time 197]  acc = 93.6791, best acc = 94.1653
+2023-11-16 07:15:29,773 - finetune_modelnet - INFO - [TEST_VOTE_time 198]  acc = 93.8817, best acc = 94.1653
+2023-11-16 07:16:43,604 - finetune_modelnet - INFO - [TEST_VOTE_time 199]  acc = 93.9627, best acc = 94.1653
+2023-11-16 07:17:57,350 - finetune_modelnet - INFO - [TEST_VOTE_time 200]  acc = 93.7196, best acc = 94.1653
+2023-11-16 07:19:11,176 - finetune_modelnet - INFO - [TEST_VOTE_time 201]  acc = 93.8817, best acc = 94.1653
+2023-11-16 07:20:24,896 - finetune_modelnet - INFO - [TEST_VOTE_time 202]  acc = 93.8006, best acc = 94.1653
+2023-11-16 07:21:38,670 - finetune_modelnet - INFO - [TEST_VOTE_time 203]  acc = 94.0438, best acc = 94.1653
+2023-11-16 07:22:52,401 - finetune_modelnet - INFO - [TEST_VOTE_time 204]  acc = 93.7601, best acc = 94.1653
+2023-11-16 07:24:06,174 - finetune_modelnet - INFO - [TEST_VOTE_time 205]  acc = 93.9222, best acc = 94.1653
+2023-11-16 07:25:19,873 - finetune_modelnet - INFO - [TEST_VOTE_time 206]  acc = 93.9222, best acc = 94.1653
+2023-11-16 07:26:33,672 - finetune_modelnet - INFO - [TEST_VOTE_time 207]  acc = 93.9222, best acc = 94.1653
+2023-11-16 07:27:47,373 - finetune_modelnet - INFO - [TEST_VOTE_time 208]  acc = 93.8006, best acc = 94.1653
+2023-11-16 07:29:01,163 - finetune_modelnet - INFO - [TEST_VOTE_time 209]  acc = 93.6791, best acc = 94.1653
+2023-11-16 07:30:14,981 - finetune_modelnet - INFO - [TEST_VOTE_time 210]  acc = 93.8006, best acc = 94.1653
+2023-11-16 07:31:28,667 - finetune_modelnet - INFO - [TEST_VOTE_time 211]  acc = 93.6791, best acc = 94.1653
+2023-11-16 07:32:42,395 - finetune_modelnet - INFO - [TEST_VOTE_time 212]  acc = 93.8412, best acc = 94.1653
+2023-11-16 07:33:56,165 - finetune_modelnet - INFO - [TEST_VOTE_time 213]  acc = 93.8817, best acc = 94.1653
+2023-11-16 07:35:09,878 - finetune_modelnet - INFO - [TEST_VOTE_time 214]  acc = 93.7196, best acc = 94.1653
+2023-11-16 07:36:23,522 - finetune_modelnet - INFO - [TEST_VOTE_time 215]  acc = 93.8006, best acc = 94.1653
+2023-11-16 07:37:37,248 - finetune_modelnet - INFO - [TEST_VOTE_time 216]  acc = 93.9627, best acc = 94.1653
+2023-11-16 07:38:51,022 - finetune_modelnet - INFO - [TEST_VOTE_time 217]  acc = 93.5981, best acc = 94.1653
+2023-11-16 07:40:04,807 - finetune_modelnet - INFO - [TEST_VOTE_time 218]  acc = 93.5575, best acc = 94.1653
+2023-11-16 07:41:18,580 - finetune_modelnet - INFO - [TEST_VOTE_time 219]  acc = 93.6386, best acc = 94.1653
+2023-11-16 07:42:32,296 - finetune_modelnet - INFO - [TEST_VOTE_time 220]  acc = 93.8817, best acc = 94.1653
+2023-11-16 07:43:46,150 - finetune_modelnet - INFO - [TEST_VOTE_time 221]  acc = 93.8006, best acc = 94.1653
+2023-11-16 07:44:59,840 - finetune_modelnet - INFO - [TEST_VOTE_time 222]  acc = 93.9222, best acc = 94.1653
+2023-11-16 07:46:13,528 - finetune_modelnet - INFO - [TEST_VOTE_time 223]  acc = 94.0843, best acc = 94.1653
+2023-11-16 07:47:27,262 - finetune_modelnet - INFO - [TEST_VOTE_time 224]  acc = 93.8412, best acc = 94.1653
+2023-11-16 07:48:40,923 - finetune_modelnet - INFO - [TEST_VOTE_time 225]  acc = 94.0438, best acc = 94.1653
+2023-11-16 07:49:54,670 - finetune_modelnet - INFO - [TEST_VOTE_time 226]  acc = 93.7601, best acc = 94.1653
+2023-11-16 07:51:08,390 - finetune_modelnet - INFO - [TEST_VOTE_time 227]  acc = 93.9222, best acc = 94.1653
+2023-11-16 07:52:22,123 - finetune_modelnet - INFO - [TEST_VOTE_time 228]  acc = 93.9222, best acc = 94.1653
+2023-11-16 07:53:35,837 - finetune_modelnet - INFO - [TEST_VOTE_time 229]  acc = 93.9222, best acc = 94.1653
+2023-11-16 07:54:49,649 - finetune_modelnet - INFO - [TEST_VOTE_time 230]  acc = 93.7601, best acc = 94.1653
+2023-11-16 07:56:03,448 - finetune_modelnet - INFO - [TEST_VOTE_time 231]  acc = 93.8412, best acc = 94.1653
+2023-11-16 07:57:17,240 - finetune_modelnet - INFO - [TEST_VOTE_time 232]  acc = 93.8412, best acc = 94.1653
+2023-11-16 07:58:30,972 - finetune_modelnet - INFO - [TEST_VOTE_time 233]  acc = 94.0438, best acc = 94.1653
+2023-11-16 07:59:44,664 - finetune_modelnet - INFO - [TEST_VOTE_time 234]  acc = 93.8412, best acc = 94.1653
+2023-11-16 08:00:58,309 - finetune_modelnet - INFO - [TEST_VOTE_time 235]  acc = 93.8006, best acc = 94.1653
+2023-11-16 08:02:12,140 - finetune_modelnet - INFO - [TEST_VOTE_time 236]  acc = 93.6791, best acc = 94.1653
+2023-11-16 08:03:25,836 - finetune_modelnet - INFO - [TEST_VOTE_time 237]  acc = 93.8006, best acc = 94.1653
+2023-11-16 08:04:39,662 - finetune_modelnet - INFO - [TEST_VOTE_time 238]  acc = 93.8006, best acc = 94.1653
+2023-11-16 08:05:53,393 - finetune_modelnet - INFO - [TEST_VOTE_time 239]  acc = 93.9222, best acc = 94.1653
+2023-11-16 08:07:07,085 - finetune_modelnet - INFO - [TEST_VOTE_time 240]  acc = 94.0438, best acc = 94.1653
+2023-11-16 08:08:20,840 - finetune_modelnet - INFO - [TEST_VOTE_time 241]  acc = 93.7601, best acc = 94.1653
+2023-11-16 08:09:34,609 - finetune_modelnet - INFO - [TEST_VOTE_time 242]  acc = 93.8817, best acc = 94.1653
+2023-11-16 08:10:48,354 - finetune_modelnet - INFO - [TEST_VOTE_time 243]  acc = 93.8006, best acc = 94.1653
+2023-11-16 08:12:02,192 - finetune_modelnet - INFO - [TEST_VOTE_time 244]  acc = 93.6386, best acc = 94.1653
+2023-11-16 08:13:15,948 - finetune_modelnet - INFO - [TEST_VOTE_time 245]  acc = 93.9222, best acc = 94.1653
+2023-11-16 08:14:29,664 - finetune_modelnet - INFO - [TEST_VOTE_time 246]  acc = 94.0438, best acc = 94.1653
+2023-11-16 08:15:43,406 - finetune_modelnet - INFO - [TEST_VOTE_time 247]  acc = 93.8412, best acc = 94.1653
+2023-11-16 08:16:57,180 - finetune_modelnet - INFO - [TEST_VOTE_time 248]  acc = 93.9222, best acc = 94.1653
+2023-11-16 08:18:10,997 - finetune_modelnet - INFO - [TEST_VOTE_time 249]  acc = 93.9627, best acc = 94.1653
+2023-11-16 08:19:24,776 - finetune_modelnet - INFO - [TEST_VOTE_time 250]  acc = 93.9627, best acc = 94.1653
+2023-11-16 08:20:38,430 - finetune_modelnet - INFO - [TEST_VOTE_time 251]  acc = 93.9222, best acc = 94.1653
+2023-11-16 08:21:52,160 - finetune_modelnet - INFO - [TEST_VOTE_time 252]  acc = 93.9627, best acc = 94.1653
+2023-11-16 08:23:05,885 - finetune_modelnet - INFO - [TEST_VOTE_time 253]  acc = 93.9222, best acc = 94.1653
+2023-11-16 08:24:19,643 - finetune_modelnet - INFO - [TEST_VOTE_time 254]  acc = 93.5981, best acc = 94.1653
+2023-11-16 08:25:33,366 - finetune_modelnet - INFO - [TEST_VOTE_time 255]  acc = 93.7196, best acc = 94.1653
+2023-11-16 08:26:47,112 - finetune_modelnet - INFO - [TEST_VOTE_time 256]  acc = 93.9627, best acc = 94.1653
+2023-11-16 08:28:00,821 - finetune_modelnet - INFO - [TEST_VOTE_time 257]  acc = 93.7196, best acc = 94.1653
+2023-11-16 08:29:14,687 - finetune_modelnet - INFO - [TEST_VOTE_time 258]  acc = 93.8412, best acc = 94.1653
+2023-11-16 08:30:28,472 - finetune_modelnet - INFO - [TEST_VOTE_time 259]  acc = 93.6791, best acc = 94.1653
+2023-11-16 08:31:42,346 - finetune_modelnet - INFO - [TEST_VOTE_time 260]  acc = 93.8817, best acc = 94.1653
+2023-11-16 08:32:56,060 - finetune_modelnet - INFO - [TEST_VOTE_time 261]  acc = 93.9222, best acc = 94.1653
+2023-11-16 08:34:09,946 - finetune_modelnet - INFO - [TEST_VOTE_time 262]  acc = 94.0438, best acc = 94.1653
+2023-11-16 08:35:23,661 - finetune_modelnet - INFO - [TEST_VOTE_time 263]  acc = 93.6386, best acc = 94.1653
+2023-11-16 08:36:37,428 - finetune_modelnet - INFO - [TEST_VOTE_time 264]  acc = 94.0438, best acc = 94.1653
+2023-11-16 08:37:51,187 - finetune_modelnet - INFO - [TEST_VOTE_time 265]  acc = 93.5981, best acc = 94.1653
+2023-11-16 08:39:04,982 - finetune_modelnet - INFO - [TEST_VOTE_time 266]  acc = 93.9222, best acc = 94.1653
+2023-11-16 08:40:18,625 - finetune_modelnet - INFO - [TEST_VOTE_time 267]  acc = 93.9627, best acc = 94.1653
+2023-11-16 08:41:32,478 - finetune_modelnet - INFO - [TEST_VOTE_time 268]  acc = 93.8006, best acc = 94.1653
+2023-11-16 08:42:46,220 - finetune_modelnet - INFO - [TEST_VOTE_time 269]  acc = 93.7196, best acc = 94.1653
+2023-11-16 08:44:00,015 - finetune_modelnet - INFO - [TEST_VOTE_time 270]  acc = 93.7601, best acc = 94.1653
+2023-11-16 08:45:13,800 - finetune_modelnet - INFO - [TEST_VOTE_time 271]  acc = 93.8006, best acc = 94.1653
+2023-11-16 08:46:27,539 - finetune_modelnet - INFO - [TEST_VOTE_time 272]  acc = 93.9222, best acc = 94.1653
+2023-11-16 08:47:41,447 - finetune_modelnet - INFO - [TEST_VOTE_time 273]  acc = 94.1248, best acc = 94.1653
+2023-11-16 08:48:55,153 - finetune_modelnet - INFO - [TEST_VOTE_time 274]  acc = 93.6791, best acc = 94.1653
+2023-11-16 08:50:08,917 - finetune_modelnet - INFO - [TEST_VOTE_time 275]  acc = 94.0438, best acc = 94.1653
+2023-11-16 08:51:22,655 - finetune_modelnet - INFO - [TEST_VOTE_time 276]  acc = 93.8817, best acc = 94.1653
+2023-11-16 08:52:36,388 - finetune_modelnet - INFO - [TEST_VOTE_time 277]  acc = 93.8817, best acc = 94.1653
+2023-11-16 08:53:50,124 - finetune_modelnet - INFO - [TEST_VOTE_time 278]  acc = 93.9222, best acc = 94.1653
+2023-11-16 08:55:03,818 - finetune_modelnet - INFO - [TEST_VOTE_time 279]  acc = 93.5981, best acc = 94.1653
+2023-11-16 08:56:17,581 - finetune_modelnet - INFO - [TEST_VOTE_time 280]  acc = 93.7196, best acc = 94.1653
+2023-11-16 08:57:31,350 - finetune_modelnet - INFO - [TEST_VOTE_time 281]  acc = 93.7196, best acc = 94.1653
+2023-11-16 08:58:45,114 - finetune_modelnet - INFO - [TEST_VOTE_time 282]  acc = 93.8817, best acc = 94.1653
+2023-11-16 08:59:58,889 - finetune_modelnet - INFO - [TEST_VOTE_time 283]  acc = 94.0032, best acc = 94.1653
+2023-11-16 09:01:12,716 - finetune_modelnet - INFO - [TEST_VOTE_time 284]  acc = 93.8006, best acc = 94.1653
+2023-11-16 09:02:26,582 - finetune_modelnet - INFO - [TEST_VOTE_time 285]  acc = 94.0032, best acc = 94.1653
+2023-11-16 09:03:40,334 - finetune_modelnet - INFO - [TEST_VOTE_time 286]  acc = 93.8006, best acc = 94.1653
+2023-11-16 09:04:54,064 - finetune_modelnet - INFO - [TEST_VOTE_time 287]  acc = 93.7196, best acc = 94.1653
+2023-11-16 09:06:07,925 - finetune_modelnet - INFO - [TEST_VOTE_time 288]  acc = 93.8817, best acc = 94.1653
+2023-11-16 09:07:21,787 - finetune_modelnet - INFO - [TEST_VOTE_time 289]  acc = 93.6386, best acc = 94.1653
+2023-11-16 09:08:35,505 - finetune_modelnet - INFO - [TEST_VOTE_time 290]  acc = 93.8412, best acc = 94.1653
+2023-11-16 09:09:49,218 - finetune_modelnet - INFO - [TEST_VOTE_time 291]  acc = 93.8817, best acc = 94.1653
+2023-11-16 09:11:02,916 - finetune_modelnet - INFO - [TEST_VOTE_time 292]  acc = 93.8412, best acc = 94.1653
+2023-11-16 09:12:16,751 - finetune_modelnet - INFO - [TEST_VOTE_time 293]  acc = 93.7601, best acc = 94.1653
+2023-11-16 09:13:30,513 - finetune_modelnet - INFO - [TEST_VOTE_time 294]  acc = 93.7601, best acc = 94.1653
+2023-11-16 09:14:44,318 - finetune_modelnet - INFO - [TEST_VOTE_time 295]  acc = 93.8817, best acc = 94.1653
+2023-11-16 09:15:58,020 - finetune_modelnet - INFO - [TEST_VOTE_time 296]  acc = 94.1653, best acc = 94.1653
+2023-11-16 09:17:11,733 - finetune_modelnet - INFO - [TEST_VOTE_time 297]  acc = 93.6791, best acc = 94.1653
+2023-11-16 09:18:25,600 - finetune_modelnet - INFO - [TEST_VOTE_time 298]  acc = 93.7196, best acc = 94.1653
+2023-11-16 09:19:39,329 - finetune_modelnet - INFO - [TEST_VOTE_time 299]  acc = 93.9627, best acc = 94.1653
+2023-11-16 09:19:39,330 - finetune_modelnet - INFO - [TEST_VOTE] acc = 94.1653
