@@ -45,7 +45,14 @@ Pre-trained by ShapeNet, Point-M2AE is evaluated by **Linear SVM** on ModelNet40
 
 ### Fine-tuning
 Synthetic shape classification on ModelNet40 with 1k points:
-|Mosels| Task  | Config | Acc.| Vote | Logs |   
+| Models | Task  | Config | Acc.| Vote | Logs |   
 | :-----: | :-----:| :-----:| :-----: | :-----:| :-----:|
 | Point-MAE+SA3F | Classification | [modelnet40.yaml](./Point-MAE_SA3D/finetune_modelnet.yaml)|93.55%| 94.16% | [modelnet40.log](./Point-MAE_SA3D/log_files/modelnet40.log) |
-| Point-M2aE+SA3F | Classification | [modelnet40.yaml](./Point-M2AE_SA3D/finetune_modelnet_PointM2AE.yaml)|92.90%| 93.03% | [modelnet40.log](./Point-M2AE_SA3D/log_files/modelnet40.txt) |
+| Point-M2AE+SA3F | Classification | [modelnet40.yaml](./Point-M2AE_SA3D/finetune_modelnet_PointM2AE.yaml)|92.90%| 93.03% | [modelnet40.log](./Point-M2AE_SA3D/log_files/modelnet40.txt) |
+
+Real-world shape classification on ScanObjectNN:
+| Models | Task | Split | Config | Acc. | Logs |   
+| :-----: | :-----:|:-----:| :-----:| :-----:|:-----:|
+| Point-MAE+SA3DF | Classification | PB-T50-RS|[scan_pb.yaml](./Point-MAE_SA3D/config_finetune_scan_hardest.yaml) | 85.35%| [scan_pd.log](./Point-MAE_SA3D/log_files/hardest.txt) |
+| Point-MAE+SA3DF | Classification |OBJ-BG| [scan_obj-bg.yaml](./Point-MAE_SA3D/config_finetune_scan_objbg.yaml) | 90.70%| [scan_obj-pd.log](./Point-MAE_SA3D/log_files/obj_bg.txt) |
+| Point-MAE+SA3DF | Classification | OBJ-ONLY| [scan_obj.yaml](./Point-MAE_SA3D/config_finetune_scan_objonly.yaml) | 90.36%| [scan_obj.log](./Point-MAE_SA3D/log_files/obj_only.txt) |
