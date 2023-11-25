@@ -62,6 +62,6 @@ Real-world shape classification on ScanObjectNN:
 
 Part segmentation on ShapeNetPart:
 | Model | Task | Dataset | mIoUc| mIoUi | Logs |   
-| :-----: | :-----: |:-----:| :-----:| :-----: | :-----:|:-----:|
+| :-----: | :-----: |:-----:| :-----:| :-----: | :-----:|
 | Point-MAE+SA3DF | Segmentation | ShapeNetPart | 84.49% | 86.04% | [seg.log](./Point-MAE_SA3D/log_files/segmentation.txt) |
 | Point-M2AE+SA3DF | Segmentation | ShapeNetPart |8 4.91% | 86.52% | - ) |
