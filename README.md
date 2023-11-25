@@ -19,3 +19,19 @@ Other packages:
 ```
 pip install -r requirements.txt
 ```
+
+```
+# Chamfer Distance & emd
+cd ./extensions/chamfer_dist
+python setup.py install --user
+cd ./extensions/emd
+python setup.py install --user
+# PointNet++
+pip install "git+https://github.com/erikwijmans/Pointnet2_PyTorch.git#egg=pointnet2_ops&subdirectory=pointnet2_ops_lib"
+# GPU kNN
+pip install --upgrade https://github.com/unlimblue/KNN_CUDA/releases/download/0.2/KNN_CUDA-0.2-py3-none-any.whl
+```
+
+### Datasets
+
+We use ShapeNet, ScanObjectNN, ModelNet40 and ShapeNetPart in this work. See [Point-MAE Repo](https://github.com/Pang-Yatian/Point-MAE/blob/main/DATASET.md) for details.
