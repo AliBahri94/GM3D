@@ -42,3 +42,10 @@ Pre-trained by ShapeNet, Point-M2AE is evaluated by **Linear SVM** on ModelNet40
 | :-----: | :-----: |:-----:| :-----: |
 | Pre-training | ShapeNet |[point-mae+SA3DF.yaml](./Point-MAE_SA3D/config.yaml)| 92.30% |
 | Pre-training | ShapeNet |[point-m2ae+SA3DF.yaml](./Point-M2AE_SA3D/config_Point_M2AE.yaml)| 93.15% |
+
+### Fine-tuning
+Synthetic shape classification on ModelNet40 with 1k points:
+|Mosels| Task  | Config | Acc.| Vote | Logs |   
+| :-----: | :-----:| :-----:| :-----: | :-----:| :-----:|
+| Point-MAE+SA3F | Classification | [modelnet40.yaml](./Point-MAE_SA3D/finetune_modelnet.yaml)|93.55%| 94.16% | [modelnet40.log](./Point-MAE_SA3D/log_files/modelnet40.log) |
+| Point-M2aE+SA3F | Classification | [modelnet40.yaml](./Point-M2AE_SA3D/finetune_modelnet_PointM2AE.yaml)|92.90%| 93.03% | [modelnet40.log](./Point-M2AE_SA3D/log_files/modelnet40.txt) |
