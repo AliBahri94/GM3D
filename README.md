@@ -124,7 +124,10 @@ CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config /Point-M2AE_SA3D/cf
 CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config ./Point-M2AE_SA3D/cfgs/config_finetune_scan_objbg_PointM2AE.yaml --finetune_model --exp_name finetune --ckpts Point-M2AE_SA3D/ckpts/pretrained_model.pth
 ```
 
-
+For ShapeNetPart, first into the `segmentation/` folder, and run:
+```bash
+coming soon ...
+```
 
 
 
