@@ -2,7 +2,7 @@
 
 The official implementation of our paper "Selective Attention in 3D: Geometrically Informed Mask Selection for Self-Supervised Point Cloud Learning".
 
-![image](figs/Screenshot from 2024-03-14 14-24-12.png)
+![image](figs/main_figure.png)
 
 We introduce a pioneering approach to self-supervised learning for point clouds, employing a geometrically informed mask selection strategy, referred to as GeoMask3D, to boost the efficiency of MAEs. Unlike the conventional method of random masking, our technique utilizes a teacher-student model to focus on intricate areas within the data, guiding the model's focus toward regions with higher geometric complexity. This strategy is grounded in the hypothesis that concentrating on harder patches yields a more robust feature representation, as evidenced by the improved performance on downstream tasks. 
 Our method also presents a complete-to-partial feature-level knowledge distillation technique designed to guide the prediction of geometric complexity utilizing a comprehensive context from feature-level information.
