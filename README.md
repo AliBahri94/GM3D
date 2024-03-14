@@ -1,10 +1,12 @@
-# Selective Attention in 3D: Geometrically Informed Mask Selection for Self-Supervised Point Cloud Learning
+# GeoMask3D: Geometrically Informed Mask Selection for Self-Supervised Point Cloud Learning in 3D
 
 The official implementation of our paper "Selective Attention in 3D: Geometrically Informed Mask Selection for Self-Supervised Point Cloud Learning".
 
 ![image](figs/Main3-1.png)
 
-We propose a novel self-supervised learning technique for point clouds that leverages a geometrically informed masked selection strategy, SA3D, to enhance the learning efficiency of MAEs. Our approach deviates from traditional random mask selection, instead employing a teacher-student paradigm that identifies and targets complex regions within the data, thereby directing the model's focus to areas rich in geometric detail. This strategy is grounded in the hypothesis that concentrating on harder-to-predict patches yields a more robust feature representation, as evidenced by the improved performance on downstream tasks. Our method also incorporates knowledge distillation, allowing a fully observed knowledge teacher to transfer complex geometric understanding to a partially observed student. This significantly improves the student network's ability to infer and reconstruct masked point clouds. Extensive experiments confirm our method's superiority over SOTA benchmarks, demonstrating marked improvements in classification, segmentation, and few-shot tasks. 
+We introduce a pioneering approach to self-supervised learning for point clouds, employing a geometrically informed mask selection strategy, referred to as GeoMask3D, to boost the efficiency of MAEs. Unlike the conventional method of random masking, our technique utilizes a teacher-student model to focus on intricate areas within the data, guiding the model's focus toward regions with higher geometric complexity. This strategy is grounded in the hypothesis that concentrating on harder patches yields a more robust feature representation, as evidenced by the improved performance on downstream tasks. 
+Our method also presents a complete-to-partial feature-level knowledge distillation technique designed to guide the prediction of geometric complexity utilizing a comprehensive context from feature-level information.
+Extensive experiments confirm our method's superiority over SOTA baselines, demonstrating marked improvements in classification, segmentation, and few-shot tasks.
 
 
 ### Requirements
