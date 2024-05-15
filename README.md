@@ -50,8 +50,8 @@ Pre-trained by ShapeNet, Point-MAE+GM3D and Point-M2AE+GM3D are evaluated by **L
 Synthetic shape classification on ModelNet40 with 1k points:
 | Model | Task  | Config | Acc.| Vote | Logs |   
 | :-----: | :-----:| :-----:| :-----: | :-----:| :-----:|
-| Point-MAE+SA3F | Classification | [modelnet40.yaml](./Point-MAE_SA3D/cfgs/finetune_modelnet.yaml)|93.55%| 94.16% | [modelnet40.log](./Point-MAE_SA3D/log_files/modelnet40.log) |
-| Point-M2AE+SA3F | Classification | [modelnet40.yaml](./Point-M2AE_SA3D/cfgs/finetune_modelnet_PointM2AE.yaml)|92.90%| 93.03% | [modelnet40.log](./Point-M2AE_SA3D/log_files/modelnet40.txt) |
+| Point-MAE+GM3D | Classification | [modelnet40.yaml](./Point-MAE_SA3D/cfgs/finetune_modelnet.yaml)|93.55%| 94.16% | [modelnet40.log](./Point-MAE_SA3D/log_files/modelnet40.log) |
+| Point-M2AE+GM3D | Classification | [modelnet40.yaml](./Point-M2AE_SA3D/cfgs/finetune_modelnet_PointM2AE.yaml)|92.90%| 93.03% | [modelnet40.log](./Point-M2AE_SA3D/log_files/modelnet40.txt) |
 
 Real-world shape classification on ScanObjectNN:
 | Model | Task | Split | Config | Acc. | Logs |   
