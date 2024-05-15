@@ -56,7 +56,7 @@ Synthetic shape classification on ModelNet40 with 1k points:
 Real-world shape classification on ScanObjectNN:
 | Model | Task | Split | Config | Acc. | Logs |   
 | :-----: | :-----:|:-----:| :-----:| :-----:|:-----:|
-| Point-MAE+GM3D | Classification | PB-T50-RS|[scan_pb.yaml](./Point-MAE_SA3D/cfgs/config_finetune_scan_hardest.yaml) | 88.30%| [scan_pd.log](./Point-MAE_SA3D/log_files/hardest.txt) |
+| Point-MAE+GM3D | Classification | PB-T50-RS|[scan_pb.yaml](./Point-MAE_SA3D/cfgs/config_finetune_scan_hardest.yaml) | 88.89%| [scan_pd.log](./Point-MAE_SA3D/log_files/hardest.txt) |
 | Point-MAE+GM3D | Classification |OBJ-BG| [scan_obj-bg.yaml](./Point-MAE_SA3D/cfgs/config_finetune_scan_objbg.yaml) | 93.45%| [scan_obj-pd.log](./Point-MAE_SA3D/log_files/obj_bg.txt) |
 | Point-MAE+GM3D | Classification | OBJ-ONLY| [scan_obj.yaml](./Point-MAE_SA3D/cfgs/config_finetune_scan_objonly.yaml) | 90.36%| [scan_obj.log](./Point-MAE_SA3D/log_files/obj_only.txt) |
 | Point-M2AE+GM3D | Classification | PB-T50-RS|[scan_pb.yaml](./Point-M2AE_SA3D/cfgs/config_finetune_scan_hardest_PointM2AE.yaml) | 87.75%| [scan_pd.log](./Point-M2AE_SA3D/log_files/hardest.txt) |
