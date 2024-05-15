@@ -1,6 +1,6 @@
 # GeoMask3D: Geometrically Informed Mask Selection for Self-Supervised Point Cloud Learning in 3D
 
-The official implementation of our paper "Selective Attention in 3D: Geometrically Informed Mask Selection for Self-Supervised Point Cloud Learning".
+The official implementation of our paper "GeoMask3D: Geometrically Informed Mask Selection for Self-Supervised Point Cloud Learning in 3D".
 
 ![image](figs/main_figure.png)
 
@@ -40,11 +40,11 @@ We use ShapeNet, ScanObjectNN, ModelNet40 and ShapeNetPart in this work. See [Po
 
 
 ### Pre-training
-Pre-trained by ShapeNet, Point-MAE+SA3DF and Point-M2AE+SA3DF are evaluated by **Linear SVM** on ModelNet40 dataset, without downstream fine-tuning:
+Pre-trained by ShapeNet, Point-MAE+GM3D and Point-M2AE+GM3D are evaluated by **Linear SVM** on ModelNet40 dataset, without downstream fine-tuning:
 | Model | Task | Dataset | Config | MN40 Acc.| 
 | :-----: | :-----: |:-----:| :-----: | :-----: |
-| Point-MAE+SA3DF | Pre-training | ShapeNet |[point-mae+SA3DF.yaml](./Point-MAE_SA3D/cfgs/config.yaml)| 92.30% |
-| Point-M2AE+SA3DF | Pre-training | ShapeNet |[point-m2ae+SA3DF.yaml](./Point-M2AE_SA3D/cfgs/config_Point_M2AE.yaml)| 93.15% |
+| Point-MAE+GM3D | Pre-training | ShapeNet |[point-mae+GM3D.yaml](./Point-MAE_SA3D/cfgs/config.yaml)| 92.30% |
+| Point-M2AE+GM3D | Pre-training | ShapeNet |[point-m2ae+GM3D.yaml](./Point-M2AE_SA3D/cfgs/config_Point_M2AE.yaml)| 93.15% |
 
 ### Fine-tuning
 Synthetic shape classification on ModelNet40 with 1k points:
@@ -56,35 +56,35 @@ Synthetic shape classification on ModelNet40 with 1k points:
 Real-world shape classification on ScanObjectNN:
 | Model | Task | Split | Config | Acc. | Logs |   
 | :-----: | :-----:|:-----:| :-----:| :-----:|:-----:|
-| Point-MAE+SA3DF | Classification | PB-T50-RS|[scan_pb.yaml](./Point-MAE_SA3D/cfgs/config_finetune_scan_hardest.yaml) | 85.35%| [scan_pd.log](./Point-MAE_SA3D/log_files/hardest.txt) |
-| Point-MAE+SA3DF | Classification |OBJ-BG| [scan_obj-bg.yaml](./Point-MAE_SA3D/cfgs/config_finetune_scan_objbg.yaml) | 90.70%| [scan_obj-pd.log](./Point-MAE_SA3D/log_files/obj_bg.txt) |
-| Point-MAE+SA3DF | Classification | OBJ-ONLY| [scan_obj.yaml](./Point-MAE_SA3D/cfgs/config_finetune_scan_objonly.yaml) | 90.36%| [scan_obj.log](./Point-MAE_SA3D/log_files/obj_only.txt) |
-| Point-M2AE+SA3DF | Classification | PB-T50-RS|[scan_pb.yaml](./Point-M2AE_SA3D/cfgs/config_finetune_scan_hardest_PointM2AE.yaml) | 86.47%| [scan_pd.log](./Point-M2AE_SA3D/log_files/hardest.txt) |
-| Point-M2AE+SA3DF | Classification |OBJ-BG| [scan_obj-bg.yaml](./Point-M2AE_SA3D/cfgs/config_finetune_scan_objbg_PointM2AE.yaml) | 92.42%| [scan_obj-pd.log](./Point-M2AE_SA3D/log_files/obj_bg.txt) |
-| Point-M2AE+SA3DF | Classification | OBJ-ONLY| [scan_obj.yaml](./Point-M2AE_SA3D/cfgs/config_finetune_scan_objonly_PointM2AE.yaml) | 89.50%| [scan_obj.log](./Point-M2AE_SA3D/log_files/obj_only.txt) |
+| Point-MAE+GM3D | Classification | PB-T50-RS|[scan_pb.yaml](./Point-MAE_SA3D/cfgs/config_finetune_scan_hardest.yaml) | 85.35%| [scan_pd.log](./Point-MAE_SA3D/log_files/hardest.txt) |
+| Point-MAE+GM3D | Classification |OBJ-BG| [scan_obj-bg.yaml](./Point-MAE_SA3D/cfgs/config_finetune_scan_objbg.yaml) | 90.70%| [scan_obj-pd.log](./Point-MAE_SA3D/log_files/obj_bg.txt) |
+| Point-MAE+GM3D | Classification | OBJ-ONLY| [scan_obj.yaml](./Point-MAE_SA3D/cfgs/config_finetune_scan_objonly.yaml) | 90.36%| [scan_obj.log](./Point-MAE_SA3D/log_files/obj_only.txt) |
+| Point-M2AE+GM3D | Classification | PB-T50-RS|[scan_pb.yaml](./Point-M2AE_SA3D/cfgs/config_finetune_scan_hardest_PointM2AE.yaml) | 86.47%| [scan_pd.log](./Point-M2AE_SA3D/log_files/hardest.txt) |
+| Point-M2AE+GM3D | Classification |OBJ-BG| [scan_obj-bg.yaml](./Point-M2AE_SA3D/cfgs/config_finetune_scan_objbg_PointM2AE.yaml) | 92.42%| [scan_obj-pd.log](./Point-M2AE_SA3D/log_files/obj_bg.txt) |
+| Point-M2AE+GM3D | Classification | OBJ-ONLY| [scan_obj.yaml](./Point-M2AE_SA3D/cfgs/config_finetune_scan_objonly_PointM2AE.yaml) | 89.50%| [scan_obj.log](./Point-M2AE_SA3D/log_files/obj_only.txt) |
 
 Part segmentation on ShapeNetPart:
 | Model | Task | Dataset | mIoUc| mIoUi | Logs |   
 | :-----: | :-----: |:-----:| :-----:| :-----: | :-----:|
-| Point-MAE+SA3DF | Segmentation | ShapeNetPart | 84.49% | 86.04% | [seg.log](./Point-MAE_SA3D/log_files/segmentation.txt) |
-| Point-M2AE+SA3DF | Segmentation | ShapeNetPart |84.91% | 86.52% | - |
+| Point-MAE+GM3D | Segmentation | ShapeNetPart | 84.49% | 86.04% | [seg.log](./Point-MAE_SA3D/log_files/segmentation.txt) |
+| Point-M2AE+GM3D | Segmentation | ShapeNetPart |84.91% | 86.52% | - |
 
 Few-shot classification on ModelNet40:
 | Model |  Task | Dataset | Config | 5w10s | 5w20s | 10w10s| 10w20s|     
 | :-----: | :-----: |:-----:| :-----: | :-----:|:-----:|:-----:| :-----:|
-| Point-MAE+SA3DF |  Few-shot Cls. | ModelNet40 |[fewshot.yaml](./Point-MAE_SA3D/cfgs/fewshot.yaml) | 97.0%|98.3%|93.1%|95.2%| 
+| Point-MAE+GM3D |  Few-shot Cls. | ModelNet40 |[fewshot.yaml](./Point-MAE_SA3D/cfgs/fewshot.yaml) | 97.0%|98.3%|93.1%|95.2%| 
 
 
 ## Get Started
 
 ### Pre-training
-Point-MAE+SA3DF and Point-M2AEe+SA3DF are pre-trained on ShapeNet dataset with the config files `./Point-MAE_SA3D/cfgs/config.yaml and ./Point-M2AE_SA3D/cfgs/config_Point_M2AE.yaml`. 
+Point-MAE+GM3D and Point-M2AEe+GM3D are pre-trained on ShapeNet dataset with the config files `./Point-MAE_SA3D/cfgs/config.yaml and ./Point-M2AE_SA3D/cfgs/config_Point_M2AE.yaml`. 
 
-Run for Point-MAE+SA3DF:
+Run for Point-MAE+GM3D:
 ```bash
 CUDA_VISIBLE_DEVICES=<GPUs> python main_pretrain.py --config ./Point-MAE_SA3D/cfgs/config.yaml  --output_dir ./address_for_saving_output_files --log_dir ./address_for_saving_output_files 
 ```
-Run for Point-M2AE+SA3DF:
+Run for Point-M2AE+GM3D:
 ```bash
 CUDA_VISIBLE_DEVICES=<GPUs> python main_pretrain.py --config ./Point-M2AE_SA3D/cfgs/config_Point_M2AE.yaml --output_dir ./address_for_saving_output_files --log_dir ./address_for_saving_output_files 
 ```
@@ -92,17 +92,17 @@ CUDA_VISIBLE_DEVICES=<GPUs> python main_pretrain.py --config ./Point-M2AE_SA3D/c
 ### Fine-tuning
 Please create a folder `ckpts/` and put pretrained_model in it.
 
-For ModelNet40 (Point-MAE+SA3DF), run:
+For ModelNet40 (Point-MAE+GM3D), run:
 ```bash
 CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config ./Point-MAE_SA3D/cfgs/finetune_modelnet.yaml --output_dir ./address_for_saving_output_files --log_dir ./address_for_saving_output_files  --finetune Point-MAE_SA3D/ckpts/pretrained_model.pth
 ```
 
-For ModelNet40 (Point-M2AE+SA3DF), run:
+For ModelNet40 (Point-M2AE+GM3D), run:
 ```bash
 CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config ./Point-M2AE_SA3D/cfgs/finetune_modelnet_PointM2AE.yaml --output_dir ./address_for_saving_output_files --log_dir ./address_for_saving_output_files --finetune Point-M2AE_SA3D/ckpts/pretrained_model.pth
 ```
 
-For the three splits of ScanObjectNN (Point-MAE+SA3DF), run:
+For the three splits of ScanObjectNN (Point-MAE+GM3D), run:
 
 ```bash
 CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config ./Point-MAE_SA3D/cfgs/config_finetune_scan_hardest.yaml --output_dir ./address_for_saving_output_files --log_dir ./address_for_saving_output_files  --finetune Point-MAE_SA3D/ckpts/pretrained_model.pth
@@ -114,7 +114,7 @@ CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config /Point-MAE_SA3D/cfg
 CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config ./Point-MAE_SA3D/cfgs/config_finetune_scan_objbg.yaml --output_dir ./address_for_saving_output_files --log_dir ./address_for_saving_output_files --finetune Point-MAE_SA3D/ckpts/pretrained_model.pth
 ```
 
-For the three splits of ScanObjectNN (Point-M2AE+SA3DF), run:
+For the three splits of ScanObjectNN (Point-M2AE+GM3D), run:
 
 ```bash
 CUDA_VISIBLE_DEVICES=<GPUs> python main_finetune.py --config ./Point-M2AE_SA3D/cfgs/config_finetune_scan_hardest_PointM2AE.yaml --output_dir ./address_for_saving_output_files --log_dir ./address_for_saving_output_files --finetune Point-M2AE_SA3D/ckpts/pretrained_model.pth
