@@ -1,3 +1,5 @@
+# TMLR 2025
+
 # GeoMask3D: Geometrically Informed Mask Selection for Self-Supervised Point Cloud Learning in 3D
 
 The official implementation of our paper "GeoMask3D: Geometrically Informed Mask Selection for Self-Supervised Point Cloud Learning in 3D".
